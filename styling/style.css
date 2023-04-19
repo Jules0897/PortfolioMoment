@@ -17,6 +17,10 @@ body {
   background-color: #dba6a6;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .title {
   margin-top: 30px;
 }
@@ -152,6 +156,10 @@ body {
   font-family: montserrat;
 }
 
+#contact > div > div > div > a {
+  text-decoration: none;
+}
+
 #contact > div > div > div > a > div {
   background-color: #000000;
   color: #FFFFFF;
@@ -218,6 +226,20 @@ body {
 
 .modal-content {
   width: 100px;
+}
+
+#pContact {
+  margin-top: 30px;
+}
+
+#pContact > div > div > img {
+  border-radius: 50% 20%/10% 40%;
+  width: 75%;
+  margin-top: 25%;
+}
+
+#pContact > div > div > h1 {
+  font-family: montserrat;
 }
 
 footer, nav {
