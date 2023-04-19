@@ -7,10 +7,10 @@ export default class Game extends Phaser.Scene {
     super("startGame");
     this.movePath = [];
   }
-  moveAlong(path) {
-    if (!path || path.length <= 0) {
-      return;
-    }
+  //moveAlong(path) {
+    //if (!path || path.length <= 0) {
+      //return;
+    //}
     this.movePath = path;
     this.moveTo(this.movePath.shift());
   }
