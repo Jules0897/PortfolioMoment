@@ -1,10 +1,21 @@
 import Phaser from "../../_snowpack/pkg/phaser.js";
+import findPath from "./findPath.js";
 import {createLinkAnims} from "./linkAnims.js";
 import("./link.js");
 export default class Game extends Phaser.Scene {
   constructor() {
     super("startGame");
     this.movePath = [];
+  }
+  moveAlong(path) {
+    if (!path || path.length <= 0) {
+      return;
+    }
+    this.movePath = path;
+    this.moveTo(this.movePath.shift());
+  }
+  moveTo(target) {
+    this.moveToTarget = target;
   }
   preload() {
     this.cursors = this.input.keyboard.createCursorKeys();
@@ -44,6 +55,12 @@ export default class Game extends Phaser.Scene {
     this.physics.add.collider(this.link, wallsLayer);
     this.physics.add.collider(this.link, removableLayer);
     this.cameras.main.startFollow(this.link, true);
+    this.input.on(Phaser.Input.Events.POINTER_UP, (pointer) => {
+      const {worldX, worldY} = pointer;
+      const startVec = overworldLayer.worldToTileXY(this.link.x, this.link.y);
+      const targetVec = overworldLayer.worldToTileXY(worldX, worldY);
+      const path = findPath(startVec, targetVec, overworldLayer, removableLayer);
+    });
     this.events.on(Phaser.Scenes.Events.SHUTDOWN, () => {
       this.input.off(Phaser.Input.Events.POINTER_UP);
     });

@@ -273,11 +273,6 @@ a:hover
   opacity: 80%;
 }
 
-// #pAboutMe>div>div>div:hover 
-// {
-//   opacity: 85%;
-// }
-
 #game
 {
   position: relative;
@@ -305,12 +300,29 @@ a:hover
 {
   border-radius: 50% 20% / 10% 40%;
   width: 75%;
-  margin-top: 25%;
+  padding-top: 30px;
+  padding-bottom: 150px;
 }
 
 #pContact>div>div>h1
 {
   font-family: montserrat;
+}
+
+@media only screen and (min-width: $screen-md-min) 
+{
+  #pContact>div>div>img
+  {
+    margin-top: 10%;
+    padding-bottom: 0px;
+    height: 400px;
+    width: 400px;
+  }
+
+  form>button
+  {
+    margin-bottom: 90px;
+  }
 }
 
 // footer
