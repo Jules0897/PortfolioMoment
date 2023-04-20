@@ -1,4 +1,4 @@
-import Phaser from "../../_snowpack/pkg/phaser.js";
+import Phaser from "phaser";
 import Preloader from "./Preloader.js";
 import Game from "./Game.js";
 export default new Phaser.Game({

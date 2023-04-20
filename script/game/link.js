@@ -1,4 +1,4 @@
-import Phaser from "../../_snowpack/pkg/phaser.js";
+import Phaser from "phaser";
 var pathfindWalk;
 export default class Link extends Phaser.Physics.Arcade.Sprite {
   constructor(scene, x, y, texture, frame) {

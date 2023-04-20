@@ -95,10 +95,32 @@ a:hover
   margin: 5px;
 }
 
+#button
+{
+  padding-bottom: 70px;
+}
+
 #aboutMe>div>div>div>div>a
 {
-  text-decoration: underline;
-  color: #000000;
+  position: absolute;
+  text-decoration: none;
+}
+
+#aboutMe>div>div>div>div>a>div
+{
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 100%;
+  border-radius: 25px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#aboutMe>div>div>div>div>a>div:hover #arrow
+{
+  transform: translatex(5px);
 }
 
 #aboutMe>div>div>div>div>h1
@@ -113,7 +135,7 @@ a:hover
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 10; /* start showing ellipsis when 3rd line is reached */
+    -webkit-line-clamp: 8; /* start showing ellipsis when 3rd line is reached */
     white-space: pre-wrap; /* let the text wrap preserving spaces */
   }
 }
@@ -218,7 +240,7 @@ a:hover
   padding-top: 10px;
 }
 
-#contact>div>div>div>a>div:hover #arrow
+#contact>div>div>div>a>div:hover #arrow2
 {
   transform: translatex(5px);
 }
@@ -290,6 +312,41 @@ a:hover
   width: 100px;
 }
 
+// About me page
+#tAboutMe>div
+{
+  margin-top: 30px;
+  margin-bottom: 150px;
+  padding: 5px;
+  background-color: $textBackground;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+#tAboutMe>div>div>div>h1
+{
+  font-family: montserrat;
+}
+
+#bold
+{
+  font-weight: bold;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+#noMP
+{
+  margin: 0;
+  padding: 0;
+}
+
+#tAboutMe>div>div>div>a>div:hover #arrow
+{
+  transform: translatex(5px);
+}
+
 // Contact page
 #pContact
 {
@@ -328,8 +385,9 @@ a:hover
 // footer
 footer, nav
 {
-  background-color: #f5f5f5;
+  background-color: $textBackground;
   padding: 10px;
+  filter: brightness(97%);
 }
 
 footer>div>div>img

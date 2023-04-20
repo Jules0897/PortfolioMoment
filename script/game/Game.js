@@ -1,4 +1,4 @@
-import Phaser from "../../_snowpack/pkg/phaser.js";
+import Phaser from "phaser";
 import findPath from "./findPath.js";
 import {createLinkAnims} from "./linkAnims.js";
 import("./link.js");
@@ -60,6 +60,7 @@ export default class Game extends Phaser.Scene {
       const startVec = overworldLayer.worldToTileXY(this.link.x, this.link.y);
       const targetVec = overworldLayer.worldToTileXY(worldX, worldY);
       const path = findPath(startVec, targetVec, overworldLayer, removableLayer);
+      this.link.moveAlong(path);
     });
     this.events.on(Phaser.Scenes.Events.SHUTDOWN, () => {
       this.input.off(Phaser.Input.Events.POINTER_UP);
