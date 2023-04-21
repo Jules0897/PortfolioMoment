@@ -489,9 +489,19 @@ footer>div>div>p
     color: $textD !important;
   }
 
-  p, a, h2, label, #tSmall, h5, span, #bold, #btn, #arrow, #arrow2
+  p, a, h2, label, #tSmall, h5, span, #bold
   {
     color: $textD !important;
+  }
+
+  #btn, #arrow, #arrow2
+  {
+    color: $backgroundD !important;
+  }
+
+  #contact>div>div>div>a>div, #aboutMe>div>div>div>div>a>div
+  {
+    background-color: $textD;
   }
 
   .card, .modal-content

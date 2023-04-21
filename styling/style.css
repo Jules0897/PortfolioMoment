@@ -377,8 +377,14 @@ footer > div > div > p {
   h1 {
     color: #FFFFFF !important;
   }
-  p, a, h2, label, #tSmall, h5, span, #bold, #btn, #arrow, #arrow2 {
+  p, a, h2, label, #tSmall, h5, span, #bold {
     color: #FFFFFF !important;
+  }
+  #btn, #arrow, #arrow2 {
+    color: #222222 !important;
+  }
+  #contact > div > div > div > a > div, #aboutMe > div > div > div > div > a > div {
+    background-color: #FFFFFF;
   }
   .card, .modal-content {
     background-color: #313131 !important;
