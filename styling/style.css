@@ -371,16 +371,13 @@ footer > div > div > p {
   body {
     background-color: #222222 !important;
   }
-  nav > a > img, footer > div > div > img {
+  nav > a > img, footer > div > div > img, #navTog {
     filter: invert(100%);
   }
   h1 {
     color: #FFFFFF !important;
   }
-  p, a, h2, label, #tSmall, h5, span, #bold {
-    color: #FFFFFF !important;
-  }
-  #btn, #arrow, #arrow2 {
+  p, a, h2, label, #tSmall, h5, span, #bold, #btn, #arrow, #arrow2 {
     color: #FFFFFF !important;
   }
   .card, .modal-content {

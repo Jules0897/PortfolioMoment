@@ -478,7 +478,7 @@ footer>div>div>p
     background-color: $backgroundD !important;
   }
 
-  nav>a>img, footer>div>div>img
+  nav>a>img, footer>div>div>img, #navTog
   {
     -webkit-filter: invert(100%);
     filter: invert(100%)
@@ -489,12 +489,7 @@ footer>div>div>p
     color: $textD !important;
   }
 
-  p, a, h2, label, #tSmall, h5, span, #bold
-  {
-    color: $textD !important;
-  }
-
-  #btn, #arrow, #arrow2
+  p, a, h2, label, #tSmall, h5, span, #bold, #btn, #arrow, #arrow2
   {
     color: $textD !important;
   }
