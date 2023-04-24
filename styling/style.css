@@ -6,6 +6,11 @@
   font-family: NES;
   src: url(../assets/fonts/NES/Pixel_NES.otf);
 }
+nav > a > img {
+  position: relative;
+  height: 30px;
+}
+
 #navT {
   color: #000000;
   padding: 0;
@@ -16,14 +21,10 @@
   opacity: 70%;
 }
 
-nav > a > img {
-  position: relative;
-  height: 30px;
-}
-
 body {
   margin: 0px;
   padding: 0px;
+  padding-bottom: 150px;
   background-color: #FFFFFF !important;
 }
 
@@ -193,7 +194,6 @@ p, a, h2, label, #tSmall, h5, span {
 
 #contact > div {
   margin-top: 30px;
-  margin-bottom: 150px;
   padding: 5px;
   background-color: #f8f4f4;
   border-radius: 25px;
@@ -306,6 +306,34 @@ p, a, h2, label, #tSmall, h5, span {
   margin-top: 20px;
 }
 
+#codeColumns {
+  height: 200px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#codeColumns tbody {
+  overflow-y: hidden; /* remove this to see how it works */
+}
+
+#codeColumns tbody th {
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+
+@keyframes moving-bars {
+  0% {
+    transform: translateY(100%);
+  }
+  15% {
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #codeColumns tbody td {
+    animation: moving-bars 8s linear;
+  }
+}
 #textBox {
   background-color: #f8f4f4;
   border-radius: 25px;
@@ -326,7 +354,6 @@ p, a, h2, label, #tSmall, h5, span {
 #pContact > div > div > div > div > div > div > div {
   margin-top: 10px;
   position: relative;
-  padding-bottom: 150px;
 }
 
 #pContact > div > div > div > div > div > div > div > a {
@@ -341,15 +368,16 @@ p, a, h2, label, #tSmall, h5, span {
   margin-right: 3px;
 }
 
+#pContact > div > div > div > div > div > div > div {
+  padding-bottom: 50px;
+}
+
 @media only screen and (min-width: 768px) {
   #pContact > div > div > div > div > div > img {
     padding-top: 0;
     padding-bottom: 0px;
     height: 300px;
     width: 300px;
-  }
-  form > button {
-    margin-bottom: 90px;
   }
 }
 footer, nav {
@@ -368,28 +396,19 @@ footer > div > div > p {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  body, #codeColumns tbody th {
     background-color: #222222 !important;
   }
   nav > a > img, footer > div > div > img, #navTog {
     filter: invert(100%);
   }
-  h1 {
+  p, a, h1, h2, label, #tSmall, h5, span, #bold, #codeColumns tbody th, #contact > div > div > div > a > div, #aboutMe > div > div > div > div > a > div, input, textarea {
     color: #FFFFFF !important;
-  }
-  p, a, h2, label, #tSmall, h5, span, #bold {
-    color: #FFFFFF !important;
-  }
-  #btn, #arrow, #arrow2 {
-    color: #222222 !important;
-  }
-  #contact > div > div > div > a > div, #aboutMe > div > div > div > div > a > div {
-    background-color: #FFFFFF;
   }
   .card, .modal-content {
     background-color: #313131 !important;
   }
-  #aboutMe > div > div, #experience > div, #contact > div, #tAboutMe > div, #textBox, footer, nav {
+  #aboutMe > div > div, #experience > div, #contact > div, #tAboutMe > div, #textBox, footer, nav, input, textarea, .custom-file-label {
     background-color: #434343 !important;
   }
 }/*# sourceMappingURL=style.css.map */
