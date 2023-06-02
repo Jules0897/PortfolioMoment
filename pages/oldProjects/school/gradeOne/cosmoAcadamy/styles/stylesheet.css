@@ -1,0 +1,1398 @@
+/*
+  User: J. Verbruggen
+  Date: 16/6/2021
+  File: stylesheet.css
+*/
+@font-face
+{
+    font-family: SansSerif;
+    src: url("../fonts/sans-serif/SansSerifBldFLF.otf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: Tahoma;
+    src: url("../fonts/Tahoma-Font/Tahoma Regular font.ttf");
+    font-weight: normal;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #66B6DF;
+}
+
+p
+{
+    font-family: SansSerif, serif;
+}
+
+H1, H2, .MainNav
+{
+    font-family: Tahoma, serif;
+}
+
+/*TELEFOON*/
+@media only screen and (min-width: 1px)
+{
+    /*NAV*/
+    nav
+    {
+        float: left;
+        background-color: #0085CA;
+        width: 100%;
+        height: 20vw;
+    }
+
+    #homeAfbeelding > img
+    {
+        position: absolute;
+        height: 19vw;
+        left: 1vw;
+        z-index: 2;
+    }
+
+    .knop
+    {
+        font-size: 6vw;
+        display: block;
+        width: 25vw;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 6.35vw;
+        padding-bottom: 6.35vw;
+    }
+
+    .knop:hover
+    {
+        background-color: white;
+        color: #0085CA;
+    }
+
+    ul li
+    {
+        position: relative;
+        float: left;
+        display: inline;
+        left: 22vw;
+    }
+
+    /*FOOTER*/
+    #footer
+    {
+        position: fixed;
+        text-align: center;
+        bottom: 0px;
+        background-color: #0085CA;
+        width: 100%;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        color: #FFFFff;
+        font-size: 7vw;
+        z-index: 2;
+    }
+
+    /*HOME PAGE*/
+    .titel
+    {
+        color: #FFFFFF;
+        font-family: Tahoma, serif;
+        font-size: 6vw;
+    }
+
+    .tekst
+    {
+        color: #FFFFFF;
+        font-family: SansSerif, serif;
+        font-size: 4vw;
+    }
+
+    #titelEen
+    {
+        position: absolute;
+        top: 22vw;
+        left: 2vw;
+    }
+
+    #tekstEen
+    {
+        position: absolute;
+        top: 28vw;
+        left: 2vw;
+        width: 96vw;
+    }
+
+    #titelTwee
+    {
+        position: absolute;
+        top: 50.5vw;
+        left: 2vw;
+    }
+
+    #tekstTwee
+    {
+        position: absolute;
+        top: 56.5vw;
+        left: 2vw;
+        width: 96vw;
+    }
+
+    #laserGame
+    {
+        position: absolute;
+        height: 30vw;
+        bottom: 40vw;
+        left: 2vw;
+        border: 1vw #0085CA solid;
+    }
+
+    #barbecue
+    {
+        position: absolute;
+        height: 30vw;
+        bottom: 40vw;
+        right: 2vw;
+        border: 1vw #0085CA solid;
+    }
+
+    #basketbal
+    {
+        position: absolute;
+        height: 23.4vw;
+        bottom: 12.5vw;
+        left: 2vw;
+        border: 1vw #0085CA solid;
+    }
+
+    #videoGames
+    {
+        position: absolute;
+        height: 23.4vw;
+        bottom: 12.5vw;
+        right: 9vw;
+        border: 1vw #0085CA solid;
+    }
+
+    /*INLOGGEN*/
+    #linkOverzicht, #uitlogKnop {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        left: 2vw;
+        width: 96vw;
+        top: 27vw;
+        text-decoration: none;
+        font-size: 23px;
+    }
+
+    #loginForm
+    {
+        position: absolute;
+        display: block;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        left: 12vw;
+        width: 72vw;
+        top: 25vw;
+        height: 40vw;
+        padding: 2vw;
+    }
+
+    .login
+    {
+        position: relative;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        height: 10vw;
+        left: 0vw;
+        top: 19vw;
+        width: 20vw;
+        font-size: 4vw;
+    }
+
+
+
+    #Password
+    {
+        position: absolute;
+        top: 10vw;
+        width: 35vw;
+        font-size: 4vw;
+        right: 4vw;
+    }
+
+    #gebruikersnaam
+    {
+        font-size: 4vw;
+    }
+
+    #wachtwoord
+    {
+        position: relative;
+        top: 3vw;
+        font-size: 4vw;
+    }
+
+    #Username
+    {
+        position: absolute;
+        font-size: 4vw;
+        right: 4vw;
+        width: 35vw;
+    }
+
+    .error
+    {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        left: 12vw;
+        padding-bottom: 1vw;
+        padding-left: 2vw;
+        width: 45vw;
+        font-size: 3vw;
+        top: 45vw;
+    }
+
+    /*veranderd de opmaak van de knop wanneer de muis er boven hangt*/
+    #linkOverzicht:hover, #uitlogKnop:hover
+    {
+        filter: brightness(95%);
+    }
+
+    #uitlogKnop
+    {
+        margin-top: 30vw;
+    }
+
+    /*EVENEMENTEN TABEL*/
+    #tabelEvenementen
+    {
+        position: relative;
+        background-color: #FFFFFF;
+        font-family: Tahoma;
+        border-collapse: collapse;
+        border: 1px solid black;
+        left: 3vw;
+        top: 7vw;
+        font-size: 2.3vw;
+        text-align: center;
+    }
+
+    #bewerkKnop
+    {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        font-size: 3vw;
+        right: 3.5vw;
+        width: 16vw;
+        top: 21vw;
+        text-decoration: none;
+    }
+
+    #evenementenTitel>a
+    {
+        color: #FFFFFF;
+    }
+
+    #evenementenTitel
+    {
+        position: absolute;
+        top: 21vw;
+        color: #FFFFFF;
+        left: 3vw;
+        font-size: 5vw;
+    }
+
+    /*EDIT PAGE*/
+    #tabelEvenementenEdit
+    {
+        position: absolute;
+        background-color: #FFFFFF;
+        font-family: Tahoma;
+        border-collapse: collapse;
+        border: 1px solid black;
+        left: 2vw;
+        top: 0vw;
+        bottom: 7vw;
+        width: 98%;
+        padding-top: 2vw;
+        text-align: center;
+    }
+
+    #tabelEvenementenSearch
+    {
+        position: absolute;
+        background-color: #FFFFFF;
+        font-family: Tahoma;
+        border-collapse: collapse;
+        border: 1px solid black;
+        top: 65vw;
+        width: 96vw;
+        text-align: center;
+    }
+
+    #zoekVeld
+    {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        font-family: Tahoma;
+        padding: 1vw;
+    }
+
+    #zoekOpdracht
+    {
+        position: absolute;
+        font-family: Tahoma;
+        top: 58vw;
+    }
+
+    #zoekKnop
+    {
+        position: absolute;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        height: 10vw;
+        left: 0vw;
+        top: 46.5vw;
+        width: 40vw;
+        font-size: 6vw;
+    }
+
+    #opslaanKnop, #verstuurKnop, #deleteKnop
+    {
+        position: absolute;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        height: 10vw;
+        right: 2vw;
+        top: 97vw;
+        width: 20vw;
+        font-size: 4vw;
+    }
+
+    /*TOEVOEGEN*/
+    #bewerk
+    {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        top: 22vw;
+        font-family: Tahoma;
+        right: 2vw;
+        width: 94vw;
+        padding: 1vw;
+        height: 110vw;
+    }
+
+    #updateKnop
+    {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        right: 39vw;
+        width: 5vw;
+        top: 43vw;
+        left: 55.5vw;
+        text-decoration: none;
+    }
+
+
+    #updateKnop2
+    {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        right: 39vw;
+        width: 5vw;
+        top: 23vw;
+        left: 1vw;
+        text-decoration: none;
+    }
+
+    #editVak
+    {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        top: 22vw;
+        font-family: Tahoma;
+        right: 2vw;
+        width: 94vw;
+        padding: 1vw;
+        height: 110vw;
+    }
+
+    .bewerkKnoppen
+    {
+        position: relative;
+        padding: 1vw;
+        margin-top: 2vw;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        width: 32vw;
+        text-align: center;
+    }
+
+    #editVak > a
+    {
+        text-decoration: none;
+    }
+
+    .bewerkKnoppen:hover, #terugKnop > div:hover, #updateKnop:hover, #updateKnop2:hover {
+        filter: brightness(95%);
+    }
+
+    #terugKnop > div
+    {
+        position: absolute;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        top: 100vw;
+        left: 1vw;
+        width: 16vw;
+        padding: 1vw;
+    }
+
+    #terugKnop
+    {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    #zoekVeldIframe
+    {
+        position: absolute;
+        top: 136vw;
+        left: 2vw;
+        height: 70vw;
+        width: 96vw;
+    }
+
+    #tabelIframe
+    {
+        position: absolute;
+        top: 210vw;
+        left: 1vw;
+        height: 70vw;
+        width: 96.5vw;
+    }
+}
+/*TABLET*/
+@media only screen and (min-width: 800px)
+{
+    /*NAV*/
+    nav {
+        float: left;
+        background-color: #0085CA;
+        width: 100%;
+        height: 5.16vw;
+    }
+
+    #homeAfbeelding > img {
+        position: absolute;
+        height: 5vw;
+        left: 1vw;
+        z-index: 2;
+    }
+
+    .knop {
+        font-size: 1vw;
+        display: block;
+        width: 10vw;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    .knop:hover
+    {
+        background-color: white;
+        color: #0085CA;
+    }
+
+    ul li
+    {
+        position: relative;
+        float: left;
+        display: inline;
+        left: 35vw;
+    }
+
+    /*FOOTER*/
+    #footer {
+        position: fixed;
+        text-align: center;
+        bottom: 0px;
+        background-color: #0085CA;
+        width: 100%;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        color: #FFFFff;
+        font-size: 1vw;
+        z-index: 2;
+    }
+
+    /*HOME PAGE*/
+    .titel {
+        color: #FFFFFF;
+        font-family: Tahoma, serif;
+        font-size: 4vw;
+    }
+
+    .tekst {
+        color: #FFFFFF;
+        font-family: SansSerif, serif;
+        font-size: 2vw;
+    }
+
+    #titelEen {
+        position: absolute;
+        top: 6vw;
+        left: 2vw;
+    }
+
+    #tekstEen {
+        position: absolute;
+        top: 11vw;
+        left: 2vw;
+        width: 50vw;
+    }
+
+    #titelTwee {
+        position: absolute;
+        top: 21vw;
+        left: 2vw;
+    }
+
+    #tekstTwee {
+        position: absolute;
+        top: 26vw;
+        left: 2vw;
+        width: 63vw;
+    }
+
+    #laserGame {
+        position: absolute;
+        height: 20vw;
+        bottom: 6.5vw;
+        left: 2vw;
+        border: 1vw #0085CA solid;
+    }
+
+    #barbecue {
+        position: absolute;
+        height: 20vw;
+        bottom: 27vw;
+        right: 2vw;
+        border: 1vw #0085CA solid;
+    }
+
+    #basketbal {
+        position: absolute;
+        height: 20vw;
+        bottom: 6.5vw;
+        right: 29.5vw;
+        border: 1vw #0085CA solid;
+    }
+
+    #videoGames {
+        position: absolute;
+        height: 20vw;
+        bottom: 6.5vw;
+        right: 2vw;
+        border: 1vw #0085CA solid;
+    }
+
+    /*INLOGGEN*/
+    #linkOverzicht, #uitlogKnop {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        left: 25vw;
+        width: 50vw;
+        top: 27vw;
+        text-decoration: none;
+        font-size: 40px;
+    }
+
+    #loginForm {
+        position: absolute;
+        display: block;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        left: 12vw;
+        width: 72vw;
+        top: 15vw;
+        height: 40vw;
+        padding: 2vw;
+    }
+
+    .login
+    {
+        position: relative;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        height: 10vw;
+        left: 25vw;
+        top: 19vw;
+        width: 20vw;
+        font-size: 4vw;
+    }
+
+    #opslaanKnop, #verstuurKnop, #deleteKnop
+    {
+        position: absolute;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        height: 10vw;
+        right: 2vw;
+        top: 97vw;
+        width: 20vw;
+        font-size: 4vw;
+    }
+
+    #Password
+    {
+        position: absolute;
+        top: 10vw;
+        width: 35vw;
+        font-size: 4vw;
+        right: 4vw;
+    }
+
+    #gebruikersnaam
+    {
+        font-size: 4vw;
+    }
+
+    #evenementenTitel>a
+    {
+        color: #FFFFFF;
+    }
+
+    #wachtwoord
+    {
+        position: relative;
+        top: 3vw;
+        font-size: 4vw;
+    }
+
+    #Username {
+        position: absolute;
+        font-size: 4vw;
+        right: 4vw;
+        width: 35vw;
+    }
+
+    .error
+    {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        left: 12vw;
+        padding-bottom: 1vw;
+        padding-left: 2vw;
+        width: 55vw;
+        font-size: 3vw;
+        top: 32vw;
+    }
+
+    /*veranderd de opmaak van de knop wanneer de muis er boven hangt*/
+    #linkOverzicht:hover, #uitlogKnop:hover {
+        filter: brightness(95%);
+    }
+
+    #uitlogKnop {
+        margin-top: 10vw;
+    }
+
+    /*EVENEMENTEN TABEL*/
+    #tabelEvenementen {
+        position: relative;
+        background-color: #FFFFFF;
+        font-family: Tahoma;
+        border-collapse: collapse;
+        border: 1px solid black;
+        left: 9vw;
+        top: 7vw;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    #bewerkKnop {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        font-size: 2vw;
+        right: 10.5vw;
+        width: 11vw;
+        top: 7.5vw;
+        text-decoration: none;
+    }
+
+    #evenementenTitel {
+        position: absolute;
+        top: 6.5vw;
+        color: #FFFFFF;
+        left: 9vw;
+        font-size: 4vw;
+    }
+
+    /*EDIT PAGE*/
+    #tabelEvenementenEdit {
+        position: absolute;
+        background-color: #FFFFFF;
+        font-family: Tahoma;
+        border-collapse: collapse;
+        border: 1px solid black;
+        left: 2vw;
+        top: 0vw;
+        bottom: 7vw;
+        width: 98%;
+        padding-top: 2vw;
+        text-align: center;
+    }
+
+    /*TOEVOEGEN*/
+    #bewerk {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        top: 7vw;
+        font-family: Tahoma;
+        right: 2vw;
+        width: 41.5vw;
+        padding: 1vw;
+        height: 33vw;
+    }
+
+    #updateKnop {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        right: 39vw;
+        width: 5vw;
+        top: 23vw;
+        left: 55.5vw;
+        text-decoration: none;
+    }
+
+
+    #updateKnop2 {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        right: 39vw;
+        width: 5vw;
+        top: 23vw;
+        left: 1vw;
+        text-decoration: none;
+    }
+
+    #editVak {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        top: 7vw;
+        font-family: Tahoma;
+        right: 2vw;
+        width: 41.5vw;
+        padding: 1vw;
+        height: 33vw;
+    }
+
+    .bewerkKnoppen {
+        position: relative;
+        padding: 1vw;
+        margin-top: 2vw;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        width: 8vw;
+        text-align: center;
+    }
+
+    #editVak > a {
+        text-decoration: none;
+    }
+
+    .bewerkKnoppen:hover, #terugKnop > div:hover, #updateKnop:hover, #updateKnop2:hover {
+        filter: brightness(95%);
+    }
+
+    #terugKnop > div {
+        position: absolute;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        top: 30vw;
+        left: 1vw;
+        width: 4vw;
+        padding: 1vw;
+    }
+
+    #terugKnop {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    #zoekVeldIframe
+    {
+        position: absolute;
+        top: 7vw;
+        left: 2vw;
+        height: 35vw;
+        width: 50vw;
+    }
+
+    #tabelIframe {
+        position: absolute;
+        top: 45vw;
+        left: 1vw;
+        height: 13.5vw;
+        width: 96.5vw;
+    }
+}
+/*COMPUTER*/
+@media only screen and (min-width: 1400px)
+{
+    /*NAV*/
+    nav
+    {
+        float: left;
+        background-color: #0085CA;
+        width: 100%;
+        height: 5.16vw;
+    }
+
+    #homeAfbeelding > img
+    {
+        position: absolute;
+        height: 5vw;
+        left: 1vw;
+        z-index: 2;
+    }
+
+    .knop
+    {
+        font-size: 1vw;
+        display: block;
+        width: 10vw;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    .knop:hover
+    {
+        background-color: white;
+        color: #0085CA;
+    }
+
+    ul li
+    {
+        position: relative;
+        float: left;
+        display: inline;
+        left: 35vw;
+    }
+
+    /*FOOTER*/
+    #footer
+    {
+        position: fixed;
+        text-align: center;
+        bottom: 0px;
+        background-color: #0085CA;
+        width: 100%;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        color: #FFFFff;
+        font-size: 1vw;
+        z-index: 2;
+    }
+    /*HOME PAGE*/
+    .titel
+    {
+        color: #FFFFFF;
+        font-family: Tahoma, serif;
+        font-size: 2.1vw;
+    }
+
+    .tekst
+    {
+        color: #FFFFFF;
+        font-family: SansSerif, serif;
+        font-size: 1.05vw;
+    }
+
+    #titelEen
+    {
+        position: absolute;
+        top: 6vw;
+        left: 2vw;
+    }
+
+    #tekstEen
+    {
+        position: absolute;
+        top: 9vw;
+        left: 2vw;
+        width: 30vw;
+    }
+
+    #titelTwee
+    {
+        position: absolute;
+        top: 15vw;
+        left: 2vw;
+    }
+
+    #tekstTwee
+    {
+        position: absolute;
+        top: 18vw;
+        left: 2vw;
+        width: 45vw;
+    }
+
+    #laserGame
+    {
+        position: absolute;
+        height: 15vw;
+        top: 26vw;
+        left: 35vw;
+        border: 1vw #0085CA solid;
+    }
+
+    #barbecue
+    {
+        position: absolute;
+        height: 15vw;
+        top: 7vw;
+        right: 15vw;
+        border: 1vw #0085CA solid;
+    }
+
+    #basketbal
+    {
+        position: absolute;
+        height: 15vw;
+        top: 26vw;
+        right: 41vw;
+        border: 1vw #0085CA solid;
+    }
+
+    #videoGames
+    {
+        position: absolute;
+        height: 15vw;
+        top: 26vw;
+        right: 15vw;
+        border: 1vw #0085CA solid;
+    }
+
+    /*INLOGGEN*/
+    #linkOverzicht, #uitlogKnop
+    {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        left: 30vw;
+        width: 40vw;
+        top: 16vw;
+        text-decoration: none;
+    }
+
+    #loginForm
+    {
+        position: absolute;
+        display: block;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        left: 11vw;
+        top: 8.5vw;
+        height: 28vw;
+        padding: 2vw;
+    }
+
+    .login
+    {
+        position: absolute;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        left: 2vw;
+
+    }
+
+    #searchVerstuur
+    {
+        position: absolute;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        height: 3vw;
+        right: 2vw;
+        top: 29vw;
+        width: 7vw;
+        font-size: 1vw;
+    }
+    #opslaanKnop, #verstuurKnop, #deleteKnop
+    {
+        position: absolute;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        height: 3vw;
+        right: 2vw;
+        top: 29vw;
+        width: 7vw;
+        font-size: 1vw;
+    }
+
+    #Password
+    {
+        position: absolute;
+    }
+
+    .error
+    {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        left: 11vw;
+        padding-bottom: 1vw;
+        padding-left: 2vw;
+        width: 55vw;
+        font-size: 3vw;
+        top: 25vw;
+    }
+
+    /*veranderd de opmaak van de knop wanneer de muis er boven hangt*/
+    #linkOverzicht:hover, #uitlogKnop:hover
+    {
+        filter: brightness(95%);
+    }
+
+    #uitlogKnop
+    {
+        margin-top: 10vw;
+    }
+
+    /*EVENEMENTEN TABEL*/
+    #tabelEvenementen
+    {
+        position: relative;
+        background-color: #FFFFFF;
+        font-family: Tahoma;
+        border-collapse: collapse;
+        border: 1px solid black;
+        top: 7vw;
+        text-align: center;
+    }
+
+    #bewerkKnop
+    {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        left: 79vw;
+        width: 10vw;
+        top: 6.2vw;
+        text-decoration: none;
+    }
+
+    #evenementenTitel
+    {
+        position: absolute;
+        top: 6.5vw;
+        color: #FFFFFF;
+        left: 9vw;
+    }
+
+    /*EDIT PAGE*/
+    #tabelEvenementenEdit
+    {
+        position: absolute;
+        background-color: #FFFFFF;
+        font-family: Tahoma;
+        border-collapse: collapse;
+        border: 1px solid black;
+        left: 2vw;
+        top: 0vw;
+        bottom: 7vw;
+        padding-top: 2vw;
+        text-align: center;
+    }
+
+    #tabelEvenementenSearch
+    {
+        position: absolute;
+        background-color: #FFFFFF;
+        font-family: Tahoma;
+        border-collapse: collapse;
+        border: 1px solid black;
+        top: 25.5vw;
+        text-align: center;
+    }
+
+    #zoekVeld
+    {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        font-family: Tahoma;
+        padding: 1vw;
+    }
+
+    #evenementenTitel>a
+    {
+        color: #FFFFFF;
+    }
+
+
+    #zoekOpdracht
+    {
+        position: absolute;
+        font-family: Tahoma;
+        top: 10vw;
+    }
+
+    /*TOEVOEGEN*/
+    #bewerk
+    {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        top: 7vw;
+        font-family: Tahoma;
+        right: 2vw;
+        width: 41.5vw;
+        padding: 1vw;
+        height: 33vw;
+    }
+
+    #updateKnop
+    {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        right: 39vw;
+        width: 5vw;
+        top: 23vw;
+        left: 55.5vw;
+        text-decoration: none;
+    }
+
+
+    #updateKnop2
+    {
+        position: absolute;
+        display: block;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        right: 39vw;
+        width: 5vw;
+        top: 23vw;
+        left: 1vw;
+        text-decoration: none;
+    }
+
+    #editVak
+    {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        top: 7vw;
+        font-family: Tahoma;
+        right: 2vw;
+        width: 41.5vw;
+        padding: 1vw;
+        height: 33vw;
+    }
+
+    .bewerkKnoppen
+    {
+        position: relative;
+        padding: 1vw;
+        margin-top: 2vw;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        width: 8vw;
+        text-align: center;
+    }
+
+    #editVak>a
+    {
+        text-decoration: none;
+    }
+
+    .bewerkKnoppen:hover, #terugKnop>div:hover, #updateKnop:hover, #updateKnop2:hover
+    {
+        filter: brightness(95%);
+    }
+
+    #terugKnop>div
+    {
+        position: absolute;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        top: 30vw;
+        left: 1vw;
+        width: 4vw;
+        padding: 1vw;
+    }
+
+    #terugKnop
+    {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    #zoekVeldIframe
+    {
+        position: absolute;
+        top: 7vw;
+        left: 2vw;
+        height: 20vw;
+        width: 50vw;
+    }
+
+    #tabelIframe
+    {
+        position: absolute;
+        top: 28.5vw;
+        left: 1vw;
+        height: 13.5vw;
+        width: 50vw;
+    }
+
+    #zoekKnop
+    {
+        position: absolute;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        height: 3vw;
+        left: 0vw;
+        top: 29vw;
+        width: 7vw;
+        font-size: 1vw;
+    }
+}
+/*responsive van het zoekveld*/
+@media only screen and (min-width: 400px)
+{
+    #zoekVeld
+    {
+        position: absolute;
+        background-color: #0085CA;
+        color: #FFFFFF;
+        font-family: Tahoma;
+        padding: 1vw;
+    }
+
+    #zoekKnop
+    {
+        position: absolute;
+        background-color: #EF2B2D;
+        color: #FFFFFF;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        height: 3.5vw;
+        left: 45.5vw;
+        top: 14vw;
+        width: 10vw;
+        z-index: 9999;
+        font-size: 2vw;
+    }
+
+    #tabelEvenementenSearch
+    {
+        position: absolute;
+        background-color: #FFFFFF;
+        font-family: Tahoma;
+        border-collapse: collapse;
+        border: 1px solid black;
+        top: 25.5vw;
+        text-align: center;
+    }
+
+    #zoekOpdracht
+    {
+        position: absolute;
+        font-family: Tahoma;
+        top: 21.5vw;
+    }
+}
