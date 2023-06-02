@@ -1,0 +1,9 @@
+.Hoofd
+/*zorgt voor de positie van de hoofdtekst*/
+{
+    font-size: 35px;
+    font-weight: 1000;
+    position: absolute;
+    top: -10px;
+    left: 180px;
+}   

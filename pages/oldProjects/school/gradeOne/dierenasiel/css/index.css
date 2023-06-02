@@ -1,0 +1,66 @@
+body
+{
+/*bepaald het lettertype*/
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav 
+{
+/*bepaald de positie van de balk*/
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+/*bepaald de kleur van de balk*/
+  background-color: #111;
+/*zorgt ervoor dat het kruisje verdwijnt wanneer de balk weg is*/
+  overflow-x: hidden;
+/*bepaald hoe snel de balk verschijnt*/
+  transition: 0.5s;
+/*zorgt voor de positie van de webpagina namen*/
+  padding-top: 60px;
+}
+
+.sidenav a 
+{
+/*zorgt voor de positie van de tekst op de balk*/
+  padding: 8px 8px 8px 32px;
+/*haalt de balk onder de tekst weg*/
+  text-decoration: none;
+/*bepaald de lettergrote van de tekst*/
+  font-size: 25px;
+/*bepaald de tekst kleur*/
+  color: #818181;
+/*zorgt ervoor dat ze in een blok order gesorteerd worden*/
+  display: block;
+/*bepaald hoe snel de tekst kleur veranderd wanneer je er over heen gaat*/
+  transition: 0.3s;
+}
+
+.sidenav a:hover 
+{
+/*bepaald welke kleur de tekst word wanneer je er met de muis overheen gaat*/
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn 
+{
+/*bepaald de positie van het kruisje*/
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#open
+{
+/*bepaald de lettergrote van het open icoontje*/
+    font-size:30px;
+/*zorgt ervoor dat de cursor naar het pointer icoontje veranderd wanneer deze er overheen hangt*/
+    cursor:pointer;
+/*veranderd de positie*/
+    position: absolute; right:20px; top: 24px;
+}

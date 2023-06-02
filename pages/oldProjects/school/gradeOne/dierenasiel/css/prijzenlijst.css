@@ -1,0 +1,28 @@
+#Hoofd
+{
+    display: inline;
+    font-size: 35px;
+    font-weight: 1000;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+html
+{
+  box-sizing: border-box;
+}
+
+.kolom
+{
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    border-style: outset;
+}
+
+.kaart
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}

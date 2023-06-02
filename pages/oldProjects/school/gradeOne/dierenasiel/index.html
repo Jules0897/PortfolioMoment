@@ -1,0 +1,73 @@
+<!doctype html>
+<!--
+Auteur: Jules Verbruggen
+Aanmaakdatum: <dd-mm-jjjj>
+
+<omschrijving inhoud>
+-->
+
+<html>
+    <head>
+        <title>
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width, initial-scale=1.0">
+        <link rel=stylesheet href="css/index.css">
+        <link rel=stylesheet href="css/index2.css">
+        <link rel=stylesheet href="css/index_home.css">
+        <script src="js/index.js" defer></script>
+        <script src="js/index_home.js" defer></script>
+    </head>
+    <body>
+        <!--voegt het plaatje toe-->
+        <img src="images/Logo_website.jpg" width="150">
+        <p class="Hoofd">
+            Dierentehuis Den Bosch
+        </p>
+        <!--voegt het open icoontje toe-->
+        <span id="open" onclick="openNav()">&#9776; open</span>
+        <hr>
+        <!--maakt een id en class voor de sidebar-->
+        <div id="mySidenav" class="sidenav">
+            <!--voegt het kruis toe om de sidebar af te sluiten-->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!--voegt de optie "Home" toe-->
+            <a href="index.html">Home</a>
+            <!--voegt de optie "Prijzen" toe-->
+            <a href="pages/prijzenlijst.html">Prijzen</a>
+            <!--voegt de optie "Info" toe-->
+            <a href="pages/info.html">Info</a>
+            <!--voegt de optie "Contact" toe-->
+            <a href="pages/contact.html">Contact</a>
+        </div>
+         <!--voegt het plaatje toe-->
+        <img id="image" src="images/welcome.png" width="300">
+        <!--Tekst-->
+        <p class="midden">
+            Welkom op de site van Dierentehuis Den Bosch <span id="naam"></span>.<br>
+            Wij hebben hier honden en katten die openstaan voor adoptie.
+        </p>
+        <!--voegt plaatjes toe die linken naar hun pagina-->
+        <table>
+            <tr>
+                <td>
+                    <a href="pages/prijzenlijst.html">
+                        <img class="knoppen" src="images/prijzen.png" width="150">
+                    </a>
+                </td>
+            <td>
+                <a href="pages/info.html">
+                <img class="knoppen" src="images/info.png" width="150">
+                </a>
+            </td>
+            <td>
+                <a href="pages/contact.html">
+                <img class="knoppen" src="images/contact.png" width="150"></a>
+            </td>    
+            </tr>
+        </table>
+    <!--voegt twee afbeeldingen toe-->
+    <img id="hond" src="images/hond.PNG" width=450>
+    <img id="kat" src="images/kat.png" width=350>
+    </body>
+</html>
