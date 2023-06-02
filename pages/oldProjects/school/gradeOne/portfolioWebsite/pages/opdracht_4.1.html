@@ -1,0 +1,89 @@
+<!doctype html>
+<!--
+Auteur: Jules Verbruggen
+Aanmaakdatum: 14-12-2020
+
+
+-->
+
+<html>
+    <head>
+        <title>
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width, initial-scale=1.0">
+        <link rel=stylesheet href="../styles/opdracht_4.1.css">
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <!--maakt een table aan met het id tabel-->
+            <table id="tabel">
+                <!--maakt een thead aan-->
+                <thead>
+                    <!--maakt een cell  met festival Programma en een breedte van 4-->
+                    <tr>
+                        <th colspan="4">Festival Programma</th>
+                    </tr>
+                    <!--maakt een tabel gedeelte zaterdag met een breedte van 4-->
+                    <tr>
+                        <td colspan="4"><b>Zaterdag</b></td>
+                    </tr>
+                </thead>
+                <!--maakt een tbody-->
+                <tbody>
+                    <!--maakt een cell dat aangeeft wat wat is-->
+                    <tr>
+                        <td><b>Begin - Eind</b></td>
+                        <td><b>Artiest</b></td>
+                        <td><b>Genre</b></td>
+                        <td><b>Stage</b></td>
+                    </tr>
+                    <!--maakt een cell voor tijden en een geen optreden stuk met een hoogte van 2 en breedte van 3-->
+                    <tr>
+                        <td>12.00 - 13.00</td>
+                        <td id="red" colspan="3" rowspan="2">Geen optreden</td>
+                    </tr> 
+                    <tr>
+                        <td>13.00 - 15.00</td>
+                    </tr>
+                    <!--maakt een cell met de tekst mystery artist en maakt deze 3 cellen wijd-->
+                    <tr>
+                        <td>15.00 - 17.00</td>
+                        <td class="yellow" colspan="3">Mystery artist</td>
+                    </tr>
+                    <!--maakt cellen aan met de class white-->
+                    <tr>
+                        <td>17.00 - 18.00</td>
+                        <td class="white">Nicky Romero</td>
+                        <td class="white">Electro House</td>
+                        <td class="white">Mainstage</td>
+                    </tr>
+                    <!--maakt een cell aan met de tekst Mystery arist en maakt deze 3 cellen wijd-->
+                    <tr>
+                        <td>18.00 - 19.00</td>
+                        <td class="yellow" colspan="3">Mystery artist</td>
+                    </tr>
+                    <!--maakt cellen aan met de class white en maakt ze 2 cellen wijd-->
+                    <tr>
+                        <td>19.00 - 21.00</td>
+                        <td class="white" rowspan="2">Tiësto</td>
+                        <td class="white" rowspan="2">Dance</td>
+                        <td class="white" rowspan="2">Mainstage</td>
+                    </tr>
+                    <tr>
+                        <td>21.00 - 23.15</td>
+                    </tr>
+                    <!--maakt cellen aan met de class white-->
+                    <tr>
+                        <td>23.15 - 1.00</td>
+                        <td class="white">Martin Garrix</td>
+                        <td class="white">Dance</td>
+                        <td class="white">Mainstage</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+/*geeft alles het calibri lettertype*/
+*
+{
+    font-family: calibri;
+}
+
+/*geeft de table, tr, th en td een ondoorbroken 2px dikke zwarte border. Ook zorgt het ervoor dat de lijnen net zijn en zet het de tekst in alle cellen in het midden*/
+table, tr, th, td
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/*geeft de th in de tr in de thead een zwarte achtergrond, witte tekst, 32 tekst grote en een hoogte van 70*/
+thead>tr>th
+{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 32px;
+    height: 70px;
+}
+
+/*maakt de hoogte van de td in de tr in de thead 60, geeft het een grijze achtergrond kleur, witte tekst en een tekst grote van 25*/
+thead>tr>td
+{
+    height: 60px;
+    background-color: #808080;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+/*geeft de tbody een donkerblauwe achtergrondkleur en witte tekst kleur*/
+tbody
+{
+    background-color: #0A3251;
+    color: #FFFF;
+}
+
+/*geeft het id red een donker rode achtergrond kleur*/
+#red
+{
+    background-color: #97172C;
+}
+
+/*geeft de class yellow een gele achtergrond kleur*/
+.yellow
+{
+        background-color: #C39549;
+}
+
+/*geeft de class white een witte achtergrond kleur en zwarte tekst kleur*/
+.white
+{
+    background-color: #FFFFFF;
+    color: #000000;
+}

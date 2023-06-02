@@ -1,0 +1,40 @@
+<!doctype html>
+<!--
+Auteur: Jules Verbruggen
+Aanmaakdatum: 12/12/2020
+opdracht 3.1
+-->
+
+<html>
+    <head>
+        <title>
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=width, initial-scale=1.0">
+        <link rel=stylesheet href="../styles/opdracht_3.1.css">
+    </head>
+    <body>
+        <h1>Aanbieding!!</h1>
+        <!--maakt een sectie voor de plaatjes-->
+        <picture>
+            <!--vervant de afbeelding wanneer de pagina wijder word dan 900px-->
+            <source media="(min-width:900px)" srcset="../images/opdracht_laptop.png">
+            <!--vervangt de afbeelding wanneer de pagina wijder word dan 600px-->
+            <source media="(min-width:600px)" srcset="../images/opdracht_tablet.png">
+            <!--voegt een afbeelding toe-->
+            <img src="../images/opdracht_cellphone.png">
+        </picture>
+        <!--maakt een sectie voor de tekst-->
+        <text>
+            <!--maakt een tekst aan-->
+            <p>Koop hier je passende device: 
+                <!--maakt het ID telefoon aan-->
+                <span1 id="telefoon">De nieuwste smartphone!</span1>
+                <!--maakt het ID tablet aan-->
+                <span1 id="tablet">De tablet die bij je past!</span1>
+                <!--maakt het ID laptop aan-->
+                <span1 id="laptop">Een laptop om van te dromen!</span1>
+            </p>
+        </text>
+    </body>
+</html>

@@ -1,0 +1,549 @@
+/*opmaak menu*/
+/*voegt een font family toe*/
+@font-face
+{
+    font-family: 'DaysOne';
+    src: url('../fonts/Days_One/DaysOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/*voegt een font family toe*/
+@font-face
+{
+    font-family: 'Sintony';
+    src: url('../fonts/Sintony/Sintony-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*zet voor alles op de website de margin en padding op 0 en de font family naar DaysOne*/
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: DaysOne, serif;
+}
+
+/*zet de achtergrond naar een image*/
+body
+{
+    background-image: url("../images/background.PNG");
+}
+
+/*bepaald de positie en opmaak van het logo plaatje*/
+#logo
+{
+    position: fixed;
+    top: 0.25vw;
+    height: 6.5vw;
+    left: 17vw;
+}
+
+/*bepaald de positie en opmaak van het vergrootglas plaatje*/
+#loupe
+{
+    position: fixed;
+    height: 1vw;
+    background-color: #303134;
+    right: 17vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+}
+
+/*bepaald de positie en opmaak van de menu div*/
+nav>div
+{
+    position: fixed;
+    display: block;
+    height: 7vw;
+    width: 100vw;
+    background-color: #0A0506;
+    text-align: center;
+    z-index: 99999;
+}
+
+/*bepaald de positie en opmaak van de menu ul*/
+nav ul
+{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 52%;
+    top: 2.5vw;
+}
+
+/*bepaald de positie en opmaak navigatie balk opmaak*/
+nav
+{
+    width: 100vw;
+    right: 0%;
+}
+
+/* opmaak links */
+nav a
+{
+    color: #e2e2e2;
+    text-decoration: none;
+    font-size: 1vw;
+}
+/*opmaak hovers*/
+nav li:hover, #loupe:hover
+{
+    background-color: #F15A24;
+    transition-duration: 0.25s;
+}
+
+/* Hiermeer zorg je ervoor dat de gebruiker het gehele blok aan kan klikken ipv enkel de link */
+nav li a
+{
+    display: block;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+}
+
+/* opmaak van de list items */
+nav li
+{
+    list-style-type: none;
+    float: left; /* Hiermee zet je de links naast elkaar */
+}
+
+/*banner*/
+#mainHome>div
+{
+    position: relative;
+    top: 7vw;
+    width: 100%;
+    left: 0px;
+    height: 1800px;
+    background-color: #000000;
+    z-index: 1;
+}
+
+/*bepaald de positie en opmaak van de banner afbeelding*/
+.banner
+{
+    position: relative;
+    top: 0vw;
+    left: 1px;
+    width: 100%;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de indoor image*/
+#indoorImg
+{
+    position: absolute;
+    top: 23vw;
+    left: 350px;
+    width: 216px;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de outdoor image*/
+#outdoorImg
+{
+    position: absolute;
+    right: 350px;
+    top: 23vw;
+    width: 216px;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de indoor tekst*/
+#indoor
+{
+    position: absolute;
+    top: 38vw;
+    left: 330px;
+    color: #e2e2e2;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de outdoor tekst*/
+#outdoor
+{
+    position: absolute;
+    right: 320px;
+    top: 38vw;
+    color: #e2e2e2;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van een lijn*/
+#outdoor+hr
+{
+    position: absolute;
+    color: #FFFFFF;
+    left: 0px;
+    top: 42vw;
+    width: 100%;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de info div*/
+#info
+{
+    position: absolute;
+    color: #e2e2e2;
+    top: 45vw;
+    left: 240px;
+    width: 37%;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de info titel*/
+#info>h1
+{
+    text-align: center;
+}
+
+/*bepaald de positie en opmaak van de info lijst*/
+#info>li
+{
+    padding-left: 50px;
+    list-style-type: square;
+}
+
+/*bepaald de positie en opmaak gratisles afbeelding*/
+#gratisLes
+{
+    position: absolute;
+    top: 46vw;
+    right: 240px;
+    width: 25%;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de gewichten afbeelding*/
+#gewichten
+{
+    position: absolute;
+    top: 60vw;
+    right: 240px;
+    width: 25%;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de lijn*/
+#gewichten+hr
+{
+    position: absolute;
+    color: #FFFFFF;
+    top: 117vw;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de lidmaadschap titel*/
+#lidmaatschap
+{
+    position: absolute;
+    font-family: Sintony, serif;
+    color: #e2e2e2;
+    top: 120vw;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de lidmaatschap lijn*/
+#lidmaatschap+hr
+{
+    position: absolute;
+    color: #FFFFFF;
+    top: 124vw;
+    left: 25%;
+    width: 50%;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de lidmaatschap tekst*/
+#lidmaatschap+hr+p
+{
+    position: absolute;
+    color: #e2e2e2;
+    top: 125vw;
+    left: 21%;
+    width: 58%;
+    text-align: center;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de groepslessen titel*/
+#groeplessen
+{
+    position: absolute;
+    font-family: Sintony, serif;
+    color: #e2e2e2;
+    top: 131vw;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de witte lijn*/
+#groeplessen+hr
+{
+    position: absolute;
+    color: #FFFFFF;
+    top: 135vw;
+    left: 25%;
+    width: 50%;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de div met de afbeeldingen*/
+#groeplessen+hr+div
+{
+    position: absolute;
+    top: 136vw;
+    left: 20%;
+    width: 60%;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de afbeelding die naar die videos linkt*/
+#videoBanner
+{
+    position: absolute;
+    top: 177vw;
+    left: 20%;
+    width: 60%;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak locatie div*/
+#locatie
+{
+    position: absolute;
+    top: 190vw;
+    width: 100%;
+    left: 0px;
+    height: 600px;
+    background-color: #000000;
+    z-index: 1;
+}
+
+/*bepaald de positie en opmaak van de google maps iframe*/
+#mapIframe
+{
+    position: relative;
+    top: 2vw;
+    left: 20%;
+    overflow:hidden;
+    background:none;
+    height:400px;
+    width:500px;
+    text-align:right;
+}
+
+/*bepaald de positie en opmaak van de locatieteksten*/
+#locatieTekst
+{
+    position: absolute;
+    color: #e2e2e2;
+    right: 23%;
+    top: 3vw;
+    height:400px;
+    width:300px;
+}
+
+/*bepaald de positie en opmaak van de socialmedia div*/
+#socialMedia
+{
+    position: absolute;
+    color: #e2e2e2;
+    right: 10%;
+    top: 23vw;
+    width:300px;
+}
+
+/*bepaald de positie en opmaak van de facebook pagina*/
+#socialMedia+a
+{
+    position: absolute;
+    right: 94%;
+    top: 25vw;
+}
+
+/*bepaald de positie en opmaak van de instagram pagina*/
+#socialMedia+a+a
+{
+    position: absolute;
+    right: 73%;
+    top: 25vw;
+}
+
+/*bepaald de positie en opmaak van de contact informatie*/
+#locatieTekst>p
+{
+    padding-left: 20px;
+}
+
+/*bepaald de positie en opmaak van de email link*/
+#locatieTekst>p>a
+{
+    text-decoration: none;
+    color: #f76b00;
+}
+
+/*bepaald de positie en opmaak van de footer op de home page*/
+#footer
+{
+    position: absolute;
+    background-color: #2F3033;
+    display: block;
+    color: #b9b9b9;
+    left: 0px;
+    top: 231vw;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 100%;
+    z-index: 2;
+}
+
+/*bepaald de positie en opmaak van de footer op de FAQ page*/
+#footer2
+{
+    position: absolute;
+    background-color: #2F3033;
+    display: block;
+    color: #b9b9b9;
+    left: 0px;
+    top: 80.5vw;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 100%;
+    z-index: 2;
+}
+
+/*FAQ vraag blokken opmaak*/
+/*veranderd wat dingen voor de classes*/
+.container, .container: :before, .container: :after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/*bepaald de opmaak van de container class*/
+.container
+{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+/*bepaald de opmaak en positie van de titel on de FAQ pagina*/
+main>h1
+{
+    position: absolute;
+    top: 8.5vw;
+    left: 2vw;
+    color: #e2e2e2;
+    font-family: Sintony, serif;
+}
+
+/*code die alles in het midden zet*/
+section
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*bepaald de opmaak en positie van de vragen*/
+.container
+{
+    position: absolute;
+    top: 13vw;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/*maakt de opmaak van het vak in zn geheel*/
+.accordion-item
+{
+    background-color: #202123;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+
+/*maakt de opmaakt van het vraag vak*/
+.accordion-link
+{
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+    background-color: #202123;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+/*bepaald de kleur voor de plus en min*/
+.accordion-link i
+{
+    color: #88877;
+    padding: .5rem;
+}
+
+/*verbergd de het min icoon wanneer het antwoord niet weergeven word*/
+.accordion-link .ion-md-remove
+{
+    display: none;
+}
+
+/*verbergd het antwoord*/
+.answer
+{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #2F3033;
+    transition: max-height 650ms;
+}
+
+/*bepaald de opmaak van de antwoord tekst*/
+.answer p
+{
+    color: rgba(255, 255, 255, .6);
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+/*zorgt dat de antwoord tekst niet groter kan worden*/
+.accordion-item:target .answer
+{
+    max-height: 20rem;
+}
+
+/*verbergt het plus symbool wanneer het antwoord weergeven word*/
+.accordion-item:target .accordion-link .ion-md-add
+{
+    display: none;
+}
+
+/*zorgt ervoor dat het min symbool verschijnt wanneer het antwoord weergeven word*/
+.accordion-item:target .accordion-link .ion-md-remove
+{
+    display: block;
+}

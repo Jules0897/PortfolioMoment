@@ -1,0 +1,79 @@
+/*
+Auteur: Jules Verbruggen
+Aanmaakdatum: 12/12/2020
+opdracht 3.1
+*/
+
+/*zet de achtergrond kleur van de pagina*/
+body
+{
+    background-color: #E0F8FA;
+}
+
+/*maakt een default opmaak voor de afbeeldingen*/
+img
+{
+    border: 8px dashed #B2D8E5;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*maakt een default opmaak voor de teksten*/
+h1, p
+{
+    font-size: 30px;
+    color: #20228A;
+    font-family: fantasy;
+    text-align: center;
+}
+
+/*haalt de ID's tablet en laptop weg*/
+#tablet, #laptop
+{
+    display: none;
+}
+
+/*maakt code aan die pas in werking word gezet zodra de pagina wijder is dan 600px*/
+@media screen and (min-width: 600px)
+{
+    /*veranderd de achtergrondkleur*/
+    body
+    {
+        background-color: #FAB637;
+    }
+    
+    /*haalt het ID telefoon weg*/
+    #telefoon
+    {
+        display: none;
+    }
+    
+    /*zet het ID tablet weer terug*/
+    #tablet
+    {
+        display: inline;
+    }
+    
+    /*maakt code aan die pas in werking word gezet zodra de pagina wijder is dan 900px*/
+    @media screen and (min-width: 900px)
+    {
+        /*veranderd de achtergrond kleur*/
+        body
+        {
+            background-color: #DA41CF;
+        }
+        
+        /*haalt het ID tablet weg*/
+        #tablet
+        {
+            display: none;
+        }
+        
+        /*zet het ID laptop weer terug*/
+        #laptop
+        {
+            display: inline;
+        }
+    }
+}

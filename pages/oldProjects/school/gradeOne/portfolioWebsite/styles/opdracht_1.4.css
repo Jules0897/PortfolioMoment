@@ -1,0 +1,35 @@
+/*opmaak menu*/
+nav
+{
+    width: 1-0vw;
+    font-family: fantasy;
+}
+
+/* opmaak links */
+a
+{
+    color: ;
+}
+/*opmaak hovers*/
+li:hover
+{
+    color: orange;
+    background-color: green;
+}
+
+/* Hiermeer zorg je ervoor dat de gebruiker het gehele blok aan kan klikken ipv enkel de link */
+li a
+{
+    display: block;
+}
+
+/* opmaak van de list items */
+li
+{
+    list-style-type: none;
+    float: left; /* Hiermee zet je de links naast elkaar */
+    text-align: center;
+    width: 16%;
+    padding-bottom: 5px;
+    background-color: gray;
+}

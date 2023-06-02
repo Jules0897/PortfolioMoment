@@ -1,0 +1,2072 @@
+/* ---===MENU BALK===--- */
+/*maakt code aan die pas in werking word gezet zodra de pagina minder wijd is dan 720px*/
+@media screen and (max-width: 719px)
+{
+	/*---===START PAGINA===---*/
+	/*zorgt ervoor dat de margin en padding overal 0px is*/
+	*
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+    /*bepaald de achtergrondkleur*/
+    body
+    {
+        background-color: #FFFFFF;
+    }
+    /*zet de lettergrote voor de p*/
+    p
+    {
+        font-size: 16px;
+    }
+    /*zet de lettergrote voor de h1*/
+    h1
+    {
+        font-size: 32px;
+    }
+	/*zorgt dat de tekstkleur van alle links zwart is*/
+	a
+	{
+		color: #000000;
+	}
+	/*zorgt voor de positie en opmaak van de menubalk*/
+	#menubalk
+	{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 90px;
+		background-color: #0B3280;
+	}
+	/*zorgt voor de positie en opmaak van homeknop afbeelding*/
+	#menubalk>a>img
+	{
+		position: relative;
+		height: 70px;
+		left: 0.5vw;
+		top: 8px;
+		background-color: #FFFFFF;
+		border-radius: 15px;
+		border: 2px solid #FFFFFF;
+	}
+	/*zorgt voor de positie en opmaak van de "Hobby's" knop*/
+	#hobby
+	{
+		position: absolute;
+		width: 100px;
+		top: 49px;
+		right: 0.5vw;
+		background-color: white;
+		border-radius: 10px;
+		text-align: center;
+		font-size: 15px; 
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	/*zorgt voor de positie en opmaak van de "Werk- en stage- ervaringen" knop*/
+	#ervaringen
+	{
+		position: absolute;
+		width: 100px;
+		top: 8px;
+		right: 0.5vw;
+		background-color: white;
+		border-radius: 10px;
+		text-align: center;
+		font-size: 15px;
+	}
+	/*zorgt voor de positie en opmaak van de "Werk- en stage- ervaringen" knop*/
+	#opleidingen
+	{
+		position: absolute;
+		width: 100px;
+		top: 49px;
+		right: 29vw;
+		background-color: white;
+		border-radius: 10px;
+		text-align: center;
+		font-size: 15px; 
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	/*zorgt voor de positie en opmaak van de "Werk- en stage- ervaringen" knop*/
+	#gegevens
+	{
+		position: absolute;
+		width: 100px;
+		top: 8px;
+		right: 29vw;
+		background-color: white;
+		border-radius: 10px;
+		text-align: center;
+		font-size: 15px; 
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	/*Haalt het tekst vak "CV Pagina's:" weg van de telefoon weergave*/
+	#menuTekst
+	{
+		display: none;
+	}
+	/*Veranderd de kleur wanneer de knop ingedrukt wordt*/
+	#menubalk>a>p:hover
+	{
+		background-color: #DFDFDF;
+	}
+	/*Veranderd de kleur wanneer de knop ingedrukt wordt*/
+	#menubalk>a>img:hover
+	{
+		background-color: #DFDFDF;
+	}
+    /*---===HOME PAGE===---*/
+    /*bepaald de opmaak en positie van de titel*/
+	#titel
+	{
+		position: absolute;
+		top: 26vw;
+		left: 1vw;
+		color: #808080;
+	}
+    /*bepaald de opmaak en positie van de text*/
+    #foto
+    {
+        position: absolute;
+		top: 310vw;
+		left: 1vw;
+        width: 96vw;
+        border: 1vw solid #000000;
+    }
+	/*Bepaald de opmaak van het tekstvak*/
+	#tekst
+	{
+		position: absolute;
+		top: 36vw;
+		left: 2vw;
+		right: 2vw;
+		border: 2px solid #000000;
+	}
+	/*---===CIJFERLIJST===---*/
+	table
+	{
+		position: absolute;
+		font-size: 26px;
+		width: 98%;
+	}
+	#lijstPO
+	{
+		top: 140px;
+	}
+	#lijstREA
+	{
+		top: 350px;
+	}
+	#lijstTV
+	{
+		top: 560px;
+	}
+	#lijstCOM
+	{
+		top: 740px;
+	}
+	#lijstBER
+	{
+		top: 950px;
+	}
+	#lijstBUR
+	{
+		top: 1100px;
+	}
+	#lijstNL
+	{
+		top: 1250px;
+	}
+	#lijstEN
+	{
+		top: 1430px;
+	}
+	#lijstRE
+	{
+		top: 1610px;
+	}
+	/*Regelt een tabel opmaak*/
+	table, tr, th, td
+	{
+		border: 2px solid black;
+		border-collapse: collapse;
+		text-align: center;
+	}
+	/*Regelt de opmaak van de titel boven de cijferlijst*/
+	#lijstTitel
+	{
+		position: absolute;
+		left: 2vw;
+		top: 100px;
+		color: #808080
+	}
+    /*veranderd de opmaak van de knop wanneer je er overheen hovered*/
+    #knopGem:hover
+	{
+		background: #4355FF;
+		color: #f5f5f5;
+	}
+	/*bepaald de positie en opmaak van de knop*/
+	#knopGem
+	{
+		position: absolute;
+		left: 30vw;
+		top: 1850px;
+		background: #6776FF;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 16px;
+		padding: 15px 32px;
+		border-radius: 12px;
+	}
+    /*bepaald de locatie en opmaak van de tekst boven de knop*/
+	#gemTitel
+	{	
+		position: absolute;
+		color: #808080;
+		top: 1770px;
+        text-align: center;
+	}
+    /*bepaald de locatie en opmaak van de uitkomst*/
+    #gemiddelde
+    {
+		position: absolute;
+		color: #808080;
+		top: 1900px;
+        height: 52px;
+        text-align: center;
+    }
+	/*---===PERSOONLIJKE GEGEVENS===---*/
+	/*Bepaald de locatie van de titel*/
+	#persoonlijkeGegevens
+	{	
+		position: absolute;
+		left: 2vw;
+		top: 90px;
+		color: #808080;
+	}
+	/*bepaald de locatie van de persoonlijke gegevens*/
+	#persoonlijkeGegevens2
+	{
+		position: absolute;
+		left: 2vw;
+		top: 130px;
+		color: #000000;
+		font-size: 16px;
+	}
+	/*bepaald de locatie en opmaak van de google maps map*/
+	iframe
+	{
+		position: absolute;
+		top: 352px;
+		left: 2%;
+        width: 46vw;
+		height: 249px;
+	}
+	/*bepaald de locatie en opmaak van de tekst boven het google maps stuk*/
+	#woonplaatsMap
+	{
+		position: absolute;
+		left: 2vw;
+		top: 310px;
+		color: #808080;
+	}
+    /*bepaald de positie en opmaak van foto2*/
+    #foto2
+    {
+        position: absolute;
+		right: 2vw;
+		top: 352px;
+        width: 46vw; 
+        border: 2px solid #000000
+    }
+	/*---===Werk- en stage- ervaringen===---*/
+	/*bepaald de opmaak en locatie van werkErvaringen*/
+	#werkErvaringen
+	{
+		position: absolute;
+		left: 1vw;
+		top: 90px;
+		color: #808080;
+	}
+	/*bepaald de opmaak en locatie van stageErvaringen*/
+	#stageErvaringen
+	{
+		position: absolute;
+		left: 1vw;
+		top: 1200px;
+		color: #808080;
+	}
+	/*maakt tekst in de klasse dik gedrukt.*/
+	.bold
+	{
+		font-weight: bold;
+	}
+	/*positioneerd de titel*/
+	#jumboTitel
+	{
+		position: absolute;
+		top: 130px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van Jumbo*/
+	#Jumbo
+	{
+		position: absolute;
+		top: 150px;
+		left: 1vw;
+		right: 1vw;
+	}
+	/*bepaald de opmaak en locatie van jumboAfbeelding*/
+	#jumboAfbeelding
+	{
+		position: absolute;
+		left: 2vw;
+		width: 96vw;
+		top: 280px;
+	}/*bepaald de opmaak en locatie van vsaTitel*/
+	#vsaTitel
+	{
+		position: absolute;
+		top: 430px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van VSA*/
+	#VSA
+	{
+		position: absolute;
+		top: 450px;
+		left: 1vw;
+		right: 1vw;
+	}
+	/*bepaald de opmaak en locatie van vsaAfbeelding*/
+	#vsaAfbeelding
+	{
+		position: absolute;
+		left: 2vw;
+		width: 96vw;
+		top: 580px;
+	}
+	/*bepaald de opmaak en locatie van autoTitel*/
+	#autoTitel
+	{
+		position: absolute;
+		top: 970px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van auto*/
+	#auto
+	{
+		position: absolute;
+		top: 990px;
+		left: 1vw;
+		right: 1vw;
+	}
+	/*bepaald de opmaak en locatie van autoAfbeelding*/
+	#autoAfbeelding
+	{
+		position: absolute;
+		left: 2vw;
+		width: 96vw;
+		top: 1075px;
+	}
+	/*bepaald de opmaak en locatie van steenuilTitel*/
+	#steenuilTitel
+	{
+		position: absolute;
+		top: 1250px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van steenuil*/
+	#steenuil
+	{
+		position: absolute;
+		top: 1270px;
+		left: 1vw;
+		right: 1vw;
+	}
+	/*bepaald de opmaak en locatie van steenuilAfbeelding*/
+	#steenuilAfbeelding
+	{
+		position: absolute;
+		left: 2vw;
+		width: 96vw;
+		top: 1390px;
+	}
+	/*bepaald de opmaak en locatie van auto2Titel*/
+	#auto2Titel
+	{
+		position: absolute;
+		top: 1556px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van auto2*/
+	#auto2
+	{
+		position: absolute;
+		top: 1580px;
+		left: 1vw;
+		right: 1vw;
+	}
+	/*bepaald de opmaak en locatie van auto2Afbeelding*/
+	#auto2Afbeelding
+	{
+		position: absolute;
+		left: 2vw;
+		width: 96vw;
+		top: 1730px;
+	}
+	/*---===OPLEIDINGEN===---*/
+	/*bepaald de opmaak en locatie van opleidingenTitel*/
+	#opleidingenTitel
+	{
+		position: absolute;
+		color: #808080;
+		left: 2vw;
+		top: 90px;
+	}
+	/*bepaald de opmaak en locatie van kempenhorst*/
+	#kempenhorst
+	{
+		position: absolute;
+		left: 2vw;
+		top: 130px;
+	}
+	/*bepaald de opmaak en locatie van kempenhorstTekst*/
+	#kempenhorstTekst
+	{
+		position: absolute;
+		left: 2vw;
+		top: 150px;
+	}
+	/*bepaald de opmaak en locatie van kempenhorstAfbeelding*/
+	#kempenhorstAfbeelding
+	{
+		position: absolute;
+		left: 20vw;
+		top: 350px;
+	}
+    /*bepaald de positie van de kw1c titel*/
+	#kw1c
+	{
+		position: absolute;
+		left: 2vw;
+		top: 510px;
+	}
+	/*bepaald de opmaak en locatie van de tekst*/
+	#kw1cTekst
+	{
+		position: absolute;
+		left: 2vw;
+		right: 20vw;
+		top: 530px;
+	}
+	/*bepaald de opmaak en locatie van de kw1c afbeelding*/
+	#kw1cAfbeelding
+	{
+		position: absolute;
+		left: 17.5vw;
+		top: 680px;
+        width: 225px;
+	}
+    /*bepaald de locatie en opmaak van de titel*/
+    #opdrachten
+    {
+        position: absolute;
+		left: 2%;
+		top: 880px;
+		color: #808080;
+    }
+    /*Bepaald de locatie en opmaak van de lijst*/
+    ul.bullet
+    {
+        list-style-type: circle;
+        position: absolute;
+		top: 960px;
+        left: 6vw;
+    }
+	/*bepaald de opmaak en locatie van diploma1*/
+	#diploma1
+	{
+		position: absolute;
+		width: 100%;
+		top: 1020px; 
+	}
+	/*bepaald de opmaak en locatie van diploma2*/
+	#diploma2
+	{
+		position: absolute;
+		width: 100%;
+		top: 1420px;
+	}
+	/*bepaald de opmaak en locatie van anglia1*/
+	#anglia1
+	{
+		position: absolute;
+		width: 100%;
+		top: 1930px;
+	}
+	/*bepaald de opmaak en locatie van anglia2*/
+	#anglia2
+	{
+		position: absolute;
+		width: 100%;
+		top: 2440px;
+	}
+	/*bepaald de opmaak en locatie van wiskundeB*/
+	#wiskundeB
+	{
+		position: absolute;
+		width: 100%;
+		top: 2950px;
+	}
+	/*bepaald de opmaak en locatie van maatschappelijkestage*/
+	#maatschappelijkestage
+	{
+		position: absolute;
+		width: 100%;
+		top: 3205px;
+	}
+	/*bepaald de opmaak en locatie van diplomas*/
+	#diplomas
+	{
+		position: absolute;
+		left: 2vw;
+		top: 1040px;
+		color: #808080;
+	}
+    /*bepaald de opmmaak en locatie het diploma plaatje*/
+    #stageDiploma
+    {
+        position: absolute;
+        top: 1930px;
+        left: 1%;
+        width: 98%;
+    }
+    /*bepaald de opmaak en locatie van de certificaat tekst*/
+    #diplomaTitel
+	{
+		position: absolute;
+		left: 1%;
+		top: 1850px;
+		color: #808080;
+	}
+	/*---===HOBBY'S===---*/
+	/*bepaald de opmaak en locatie van de hobby titel*/
+	#hobbyTitel
+	{
+		position: absolute;
+		color: #808080;
+		left: 2vw;
+		top: 90px;
+	}
+	/*bepaald de opmaak en locatie van de hapkido titel*/
+	#hapkido
+	{
+		position: absolute;
+		left: 2vw;
+		top: 140px;
+	}
+	/*bepaald de opmaak en locatie van hapkido tekst*/
+	#hapkidoTekst
+	{
+		position: absolute;
+		left: 2vw;
+		right: 2vw;
+		top: 160px;
+	}
+	/*bepaald de opmaak en locatie van hapkido afbeelding*/
+	#hapkidoAfbeelding
+	{
+		position: absolute;
+		left: 27vw;
+		top: 310px;
+	}
+	/*bepaald de opmaak en locatie van grasparkiet titel*/
+	#grasparkiet
+	{
+		position: absolute;
+		left: 2vw;
+		top: 470px;
+	}
+	/*bepaald de opmaak en locatie van de grasparkiet tekst*/
+	#grasparkietTekst
+	{
+		position: absolute;
+		left: 2vw;
+		right: 2vw;
+		top: 490px;
+	}
+	/*bepaald de opmaak en locatie van de grasparkiet afbeelding*/
+	#grasparkietAfbeelding
+	{
+		position: absolute;
+		top: 600px;
+		width: 98vw;
+	}
+	/*bepaald de opmaak en locatie van de videogames titel*/
+	#videogames
+	{
+		position: absolute;
+		left: 2vw;
+		top: 800px;
+	}
+	/*bepaald de opmaak en locatie van de videogames tekst*/
+	#videogamesTekst
+	{
+		position: absolute;
+		left: 2vw;
+		right: 2vw;
+		top: 820px;
+	}
+	/*bepaald de opmaak en locatie van de videogames video*/
+	#videogamesVideo
+	{
+		position: absolute;
+		left: 2vw;
+		width: 96vw;
+		height: 195px;
+		top: 1010px;
+	}
+    /*---===CV NEDERLANDS===---*/
+    /*bepaald de locatie en opmaak van de titel*/
+    #cvNederlandsTitel
+    {
+        position: absolute;
+		left: 1vw;
+		top: 90px;
+		color: #808080;
+    }
+    /*bepaald de locatie en opmaak van de afbeelding*/
+    #cvNederlandsAfbeelding
+    {
+        position: absolute;
+		top: 130px;
+        width: 100vw;
+    }
+}
+/*maakt code aan die pas in werking word gezet zodra de pagina wijder is dan 720px*/
+@media screen and (min-width: 720px)
+{
+	/*zorgt ervoor dat de margin en padding overal 0px is*/
+	*
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+    /*bepaald de achtergrondkleur*/
+    body
+    {
+        background-color: #FFFFFF;
+    }
+    /*zet de lettergrote voor de p*/
+    p
+    {
+        font-size: 16px;
+    }
+    /*zet de lettergrote voor de h1*/
+    h1
+    {
+        font-size: 32px;
+    }
+	/*zorgt dat de tekstkleur van alle links zwart is*/
+	a
+	{
+		color: #000000;
+	}
+	/*zorgt voor de positie en opmaak van de menubalk*/
+	#menubalk
+	{
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 65px;
+		background-color: #0B3280;
+		z-index: 2;
+	}
+	/*zorgt voor de positie en opmaak van homeknop afbeelding*/
+	#home
+	{
+		position: relative;
+		height: 44.8px;
+		left: 1vw;
+		top: 8px;
+		background-color: #FFFFFF;
+		border-radius: 15px;
+		border: 2px solid #FFFFFF;
+	}
+	/*zorgt voor de positie en opmaak van cijferlijst afbeelding*/
+	#cijferlijst
+	{
+		position: relative;
+		height: 44.8px;
+		left: 2vw;
+		top: 8px;
+		background-color: #FFFFFF;
+		border-radius: 15px;
+		border: 2px solid #FFFFFF;
+	}
+	/*zorgt voor de positie en opmaak van de "Hobby's" knop*/
+	#hobby
+	{
+		position: absolute;
+		width: 130px;
+		top: 8px;
+		right: 0.5vw;
+		background-color: white;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 20px; 
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+	/*zorgt voor de positie en opmaak van de "Werk- en stage- ervaringen" knop*/
+	#ervaringen
+	{
+		position: absolute;
+		width: 130px;
+		top: 8px;
+		right: 19vw;
+		background-color: white;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 20px;
+	}
+	/*zorgt voor de positie en opmaak van de "Opleidingen" knop*/
+	#opleidingen
+	{
+		position: absolute;
+		width: 130px;
+		top: 8px;
+		right: 37.5vw;
+		background-color: white;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 20px; 
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+	/*zorgt voor de positie en opmaak van de "Persoonlijke gegevens" knop*/
+	#gegevens
+	{
+		position: absolute;
+		width: 130px;
+		top: 8px;
+		right: 56vw;
+		background-color: white;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 20px; 
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+	/*zorgt voor de positie en opmaak van de "CV Pagina's:" tekst*/
+	#menuTekst
+	{
+		position: absolute;
+		width: 70px;
+		top: 10px;
+		right: 74vw;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 18px; 
+		color: #FFFFFF;
+	}
+	/*Veranderd de kleur wanneer de muis er overheen hangt*/
+	#menubalk>a>p:hover
+	{
+		background-color: #DFDFDF;
+	}
+	/*Veranderd de kleur wanneer de muis er overheen hangt*/
+	#menubalk>a>img:hover
+	{
+		background-color: #DFDFDF;
+	}
+    /*---===HOMEPAGE===---*/
+	/*Bepaald de opmaak van de tekst titel*/
+	#titel
+	{
+		position: absolute;
+		top: 70px;
+		left: 390px;
+		color: #808080;
+	}
+	/*Bepaald de opmaak van de foto*/
+	#foto
+	{
+		position: absolute;
+		top: 110px;
+		left: 10px;
+		height: 550px;
+		border: 2px solid #000000;
+	}
+	/*Bepaald de opmaak van het tekst vak*/
+	#tekst
+	{
+		position: absolute;
+		top: 110px;
+		left: 390px;
+		right: 1vw;
+		border: 2px solid #000000;
+	}
+	/*---===CIJFERLIJST===---*/
+	/*Bepaald de tabel opmaak*/
+	table
+	{
+		position: absolute;
+		font-size: 26px;
+		width: 300px;
+	}
+	/*zet een positie voor de plannen en ontwerpen lijst*/
+	#lijstPO
+	{
+		left: 2%;
+		top: 110px;
+	}
+	/*bepaald de opmaak en locatie van lijstREA*/
+	#lijstREA
+	{
+		right: 2%;
+		top: 110px;
+	}
+	/*bepaald de opmaak en locatie van lijstTV*/
+	#lijstTV
+	{
+		right: 2%;
+		top: 310px;
+	}
+	/*bepaald de opmaak en locatie van lijstCOM*/
+	#lijstCOM
+	{
+		left: 2%;
+		top: 310px;
+	}
+	/*bepaald de opmaak en locatie van lijstBER*/
+	#lijstBER
+	{
+		left: 2%;
+		top: 850px;
+	}
+	/*bepaald de opmaak en locatie van lijstBUR*/
+	#lijstBUR
+	{
+		right: 2%;
+		top: 680px;
+	}
+	/*bepaald de opmaak en locatie van lijstNL*/
+	#lijstNL
+	{
+		left: 2%;
+		top: 510px;
+	}
+	/*bepaald de opmaak en locatie van lijstEN*/
+	#lijstEN
+	{
+		right: 2%;
+		top: 510px;
+	}
+	/*bepaald de opmaak en locatie van lijstRE*/
+	#lijstRE
+	{
+		left: 2%;
+		top: 680px;
+	}
+	/*Regelt een tabel opmaak*/
+	table, tr, th, td
+	{
+		border: 2px solid black;
+		border-collapse: collapse;
+		text-align: center;
+	}
+	/*Regelt de opmaak van de titel boven de cijferlijst*/
+	#lijstTitel
+	{
+		position: absolute;
+		left: 2vw;
+		top: 70px;
+		color: #808080
+	}
+    /*veranderd de opmaak van de knop wanneer je er overheen hovered*/
+	#knopGem:hover
+	{
+		background: #4355FF;
+		color: #f5f5f5;
+	}
+	/*bepaald de positie en opmaak van de knop*/
+	#knopGem
+	{
+		position: absolute;
+		right: 15vw;
+		top: 872.5px;
+		background: #6776FF;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 16px;
+		padding: 10px 15px;
+		border-radius: 12px;
+	}
+    /*bepaald de opmaak en locatie van de tekst*/
+	#gemTitel
+	{	
+		position: absolute;
+		color: #808080;
+		right: 2vw;
+        width: 300px;
+        font-size: 26px;
+		top: 810px;
+        text-align: center;
+	}
+    /*bepaald de opmaak en locatie van de uitslag*/
+    #gemiddelde
+    {
+		position: absolute;
+		color: #808080;
+		right: 2vw;
+		top: 915px;
+        width: 300px;
+        height: 52px;
+        font-size: 26px;
+        text-align: center;
+    }
+	/*PERSOONLIJKE GEGEVENS*/
+	/*Bepaald de locatie van de titel*/
+	#persoonlijkeGegevens
+	{	
+		position: absolute;
+		left: 1vw;
+		top: 70px;
+		color: #808080;
+	}
+	/*bepaald de locatie van de persoonlijke gegevens*/
+	#persoonlijkeGegevens2
+	{
+		position: absolute;
+		left: 1vw;
+		top: 110px;
+		color: #000000;
+		font-size: 16px;
+	}
+	/*bepaald de locatie en opmaak van de google maps map*/
+	iframe
+	{
+		position: absolute;
+		top: 110px;
+		right: 1vw;
+		width: 200px;
+		height: 200px;
+		border: 2px solid #000000
+	}
+	/*bepaald de locatie en opmaak van de tekst boven het google maps stuk*/
+	#woonplaatsMap
+	{
+		position: absolute;
+		top: 70px;
+		right: 40px;
+		color: #808080;
+	}
+	/*bepaald de opmaak en locatie van foto2*/
+	#foto2
+	{
+		position: absolute;
+		top: 110px;
+		right: 32vw;
+		height: 200px;
+		border: 2px solid #000000
+	}
+	/*---===WERK- EN STAGE- ERVARINGEN===---*/
+	/*bepaald de opmaak en locatie van werkErvaringen*/
+	#werkErvaringen
+	{
+		position: absolute;
+		left: 1vw;
+		top: 70px;
+		color: #808080;
+	}
+	/*bepaald de opmaak en locatie van stageErvaringen*/
+	#stageErvaringen
+	{
+		position: absolute;
+		left: 1vw;
+		top: 470px;
+		color: #808080;
+	}
+	/*maakt tekst in de klasse dik gedrukt.*/
+	.bold
+	{
+		font-weight: bold;
+	}
+	/*positioneerd de titel*/
+	#jumboTitel
+	{
+		position: absolute;
+		top: 110px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van Jumbo*/
+	#Jumbo
+	{
+		position: absolute;
+		top: 130px;
+		left: 1vw;
+		right: 40vw;
+	}
+	/*bepaald de opmaak en locatie van jumboAfbeelding*/
+	#jumboAfbeelding
+	{
+		position: absolute;
+		right: 5vw;
+		height: 10vw;
+		top: 130px;
+	}
+	/*bepaald de opmaak en locatie van vsaTitel*/
+	#vsaTitel
+	{
+		position: absolute;
+		top: 230px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van VSA*/
+	#VSA
+	{
+		position: absolute;
+		top: 250px;
+		left: 1vw;
+		right: 40vw;
+	}
+	/*bepaald de opmaak en locatie van vsaAfbeelding*/
+	#vsaAfbeelding
+	{
+		position: absolute;
+		right: 11vw;
+		height: 15vw;
+		top: 245px;
+	}
+	/*bepaald de opmaak en locatie van autoTitel*/
+	#autoTitel
+	{
+		position: absolute;
+		top: 370px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van auto*/
+	#auto
+	{
+		position: absolute;
+		top: 390px;
+		left: 1vw;
+		right: 40vw;
+	}
+	/*bepaald de opmaak en locatie van autoAfbeelding*/
+	#autoAfbeelding
+	{
+		position: absolute;
+		right: 1.5vw;
+		height: 10vw;
+		top: 370px;
+	}
+	/*bepaald de opmaak en locatie van steenuilTitel*/
+	#steenuilTitel
+	{
+		position: absolute;
+		top: 510px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van steenuil*/
+	#steenuil
+	{
+		position: absolute;
+		top: 530px;
+		left: 1vw;
+		right: 40vw;
+	}
+	/*bepaald de opmaak en locatie van steenuilAfbeelding*/
+	#steenuilAfbeelding
+	{
+		position: absolute;
+		right: 1vw;
+		height: 15vw;
+		top: 505px;
+	}
+	/*bepaald de opmaak en locatie van auto2Titel*/
+	#auto2Titel
+	{
+		position: absolute;
+		top: 630px;
+		left: 1vw;
+	}/*bepaald de opmaak en locatie van auto2*/
+	#auto2
+	{
+		position: absolute;
+		top: 650px;
+		left: 1vw;
+		right: 40vw;
+	}
+	/*bepaald de opmaak en locatie van auto2Afbeelding*/
+	#auto2Afbeelding
+	{
+		position: absolute;
+		right: 1.5vw;
+		height: 10vw;
+		top: 650px;
+	}
+	/*---===OPLEIDINGEN===---*/
+	/*bepaald de positie van de pagina titel*/
+	#opleidingenTitel
+	{
+		position: absolute;
+		color: #808080;
+		left: 1vw;
+		top: 90px;
+	}
+	/*bepaald de positie van de kempenhorst titel*/
+	#kempenhorst
+	{
+		position: absolute;
+		left: 1vw;
+		top: 130px;
+	}
+	/*bepaald de opmaak en locatie van de tekst*/
+	#kempenhorstTekst
+	{
+		position: absolute;
+		left: 1vw;
+		right: 36vw;
+		top: 150px;
+	}
+	/*bepaald de opmaak en locatie van de kempenhorst afbeelding*/
+	#kempenhorstAfbeelding
+	{
+		position: absolute;
+		right: 2vw;
+		top: 140px;
+	}
+    /*bepaald de positie van de kw1c titel*/
+	#kw1c
+	{
+		position: absolute;
+		left: 1vw;
+		top: 290px;
+	}
+	/*bepaald de opmaak en locatie van de tekst*/
+	#kw1cTekst
+	{
+		position: absolute;
+		left: 1vw;
+		right: 36vw;
+		top: 310px;
+	}
+	/*bepaald de opmaak en locatie van de kw1c afbeelding*/
+	#kw1cAfbeelding
+	{
+		position: absolute;
+		right: 2vw;
+		top: 300px;
+        width: 225px;
+	}
+    /*bepaald de locatie en opmaak van de titel*/
+    #opdrachten
+    {
+        position: absolute;
+		left: 2%;
+		top: 500px;
+		color: #808080;
+    }
+    /*Bepaald de locatie en opmaak van de lijst*/
+    ul.bullet
+    {
+        list-style-type: circle;
+        position: absolute;
+		top: 540px;
+        left: 3vw;
+    }
+	/*bepaald de opmaak en locatie van diploma1*/
+	#diploma1
+	{
+		position: absolute;
+		width: 48%;
+		left: 1%;
+		top: 670px;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van diploma2*/
+	#diploma2
+	{
+		position: absolute;
+		width: 48%;
+		right: 1%;
+		top:   670px;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van anglia1*/
+	#anglia1
+	{
+		position: absolute;
+		width: 48%;
+		left: 1%;
+		top: 1169px;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van anglia2*/
+	#anglia2
+	{
+		position: absolute;
+		width: 48%;
+		right: 1%;
+		top: 1169px;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van wiskundeB*/
+	#wiskundeB
+	{
+		position: absolute;
+		width: 97.4%;
+		left: 1%;
+		top: 1668px;;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van maatschappelijkestage*/
+	#maatschappelijkestage
+	{
+		position: absolute;
+		width: 97.4%;
+		left: 1%;
+		top: 2171px;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van de diploma's tekst*/
+	#diplomas
+	{
+		position: absolute;
+		left: 1%;
+		top: 620px;
+		color: #808080;
+	}
+    /*bepaald de opmmaak en locatie het diploma plaatje*/
+    #stageDiploma
+    {
+        position: absolute;
+        top: 815px;
+        left: 1%;
+        width: 98%;
+    }
+    /*bepaald de opmaak en locatie van de certificaat tekst*/
+    #diplomaTitel
+	{
+		position: absolute;
+		left: 1%;
+		top: 770px;
+		color: #808080;
+	}
+	/*---===HOBBY'S===---*/
+	/*bepaald de opmaak en locatie van de hobby titel*/
+	#hobbyTitel
+	{
+		position: absolute;
+		color: #808080;
+		left: 2vw;
+		top: 70px;
+	}
+	/*bepaald de opmaak en locatie van de hapkido titel*/
+	#hapkido
+	{
+		position: absolute;
+		left: 2vw;
+		top: 110px;
+	}
+	/*bepaald de opmaak en locatie van hapkido tekst*/
+	#hapkidoTekst
+	{
+		position: absolute;
+		left: 2vw;
+		right: 40vw;
+		top: 130px;
+	}
+	/*bepaald de opmaak en locatie van hapkido afbeelding*/
+	#hapkidoAfbeelding
+	{
+		position: absolute;
+		right: 10vw;
+		height: 20vw;
+		top: 120px;
+	}
+	/*bepaald de opmaak en locatie van grasparkiet titel*/
+	#grasparkiet
+	{
+		position: absolute;
+		left: 2vw;
+		top: 270px;
+	}
+	/*bepaald de opmaak en locatie van de grasparkiet tekst*/
+	#grasparkietTekst
+	{
+		position: absolute;
+		left: 2vw;
+		right: 40vw;
+		top: 290px;
+	}
+	/*bepaald de opmaak en locatie van de grasparkiet afbeelding*/
+	#grasparkietAfbeelding
+	{
+		position: absolute;
+		top: 270px;
+		right: 5.5vw;
+		height: 16vw;
+	}
+	/*bepaald de opmaak en locatie van de videogames titel*/
+	#videogames
+	{
+		position: absolute;
+		left: 2vw;
+		top: 390px;
+	}
+	/*bepaald de opmaak en locatie van de videogames tekst*/
+	#videogamesTekst
+	{
+		position: absolute;
+		left: 2vw;
+		right: 40vw;
+		top: 410px;
+	}
+	/*bepaald de opmaak en locatie van de videogames video*/
+	#videogamesVideo
+	{
+		position: absolute;
+		right:1.7vw;
+		width: 255px;
+		height: 20vw;
+		top: 415px;
+	}
+    /*---===CV NEDERLANDS===---*/
+    /*bepaald de locatie en opmaak van de titel*/
+    #cvNederlandsTitel
+    {
+        position: absolute;
+		left: 1vw;
+		top: 90px;
+		color: #808080;
+    }
+    /*bepaald de locatie en opmaak van de afbeelding*/
+    #cvNederlandsAfbeelding
+    {
+        position: absolute;
+		top: 130px;
+        left: 1vw;
+        width: 50vw;
+    }
+}
+/*maakt code aan die pas in werking word gezet zodra de pagina wijder is dan 1400px*/
+@media screen and (min-width: 1400px)
+{
+	/*zorgt ervoor dat de margin en padding overal 0px is*/
+	*
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+    /*bepaald de achtergrondkleur*/
+    body
+    {
+        background-color: #FFFFFF;
+    }
+    /*zet de lettergrote voor de p*/
+    p
+    {
+        font-size: 16px;
+    }
+    /*zet de lettergrote voor de h1*/
+    h1
+    {
+        font-size: 32px;
+    }
+	/*zorgt dat de tekstkleur van alle links zwart is*/
+	a
+	{
+		color: #000000;
+	}
+	/*zorgt voor de positie en opmaak van de menubalk*/
+	#menubalk
+	{
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 90px;
+		background-color: #0B3280;
+		z-index: 2;
+	}
+	/*zorgt voor de positie en opmaak van homeknop afbeelding*/
+	#home
+	{
+		position: relative;
+		height: 70px;
+		left: 1vw;
+		top: 8px;
+		background-color: #FFFFFF;
+		border-radius: 15px;
+		border: 2px solid #FFFFFF;
+	}
+	/*zorgt voor de positie en opmaak van cijferlijst afbeelding*/
+	#cijferlijst
+	{
+		position: relative;
+		height: 70px;
+		left: 2vw;
+		top: 8px;
+		background-color: #FFFFFF;
+		border-radius: 15px;
+		border: 2px solid #FFFFFF;
+	}
+	/*zorgt voor de positie en opmaak van de "Hobby's" knop*/
+	#hobby
+	{
+		position: absolute;
+		width: 250px;
+		top: 8px;
+		right: 1vw;
+		background-color: white;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 32px; 
+		padding-top: 18px;
+		padding-bottom: 19px;
+	}
+	/*zorgt voor de positie en opmaak van de "Werk- en stage- ervaringen" knop*/
+	#ervaringen
+	{
+		position: absolute;
+		width: 250px;
+		top: 8px;
+		right: 19vw;
+		background-color: white;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 32px;
+	}
+	/*zorgt voor de positie en opmaak van de "Opleidingen" knop*/
+	#opleidingen
+	{
+		position: absolute;
+		width: 250px;
+		top: 8px;
+		right: 37vw;
+		background-color: white;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 32px; 
+		padding-top: 18px;
+		padding-bottom: 19px;
+	}
+	/*zorgt voor de positie en opmaak van de "Persoonlijke gegevens" knop*/
+	#gegevens
+	{
+		position: absolute;
+		width: 250px;
+		top: 8px;
+		right: 55vw;
+		background-color: white;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 32px; 
+		padding-top: 18px;
+		padding-bottom: 19px;
+	}
+	/*zorgt voor de positie en opmaak van de "CV Pagina's:" tekst*/
+	#menuTekst
+	{
+		position: absolute;
+		width: 250px;
+		top: 8px;
+		right: 70vw;
+		border-radius: 15px;
+		text-align: center;
+		font-size: 32px; 
+		color: #FFFFFF;
+		padding-top: 18px;
+		padding-bottom: 19px;
+	}
+	/*Veranderd de kleur wanneer de muis er overheen hangt*/
+	#menubalk>a>p:hover
+	{
+		background-color: #DFDFDF;
+	}
+	/*Veranderd de kleur wanneer de muis er overheen hangt*/
+	#menubalk>a>img:hover
+	{
+		background-color: #DFDFDF;
+	}
+    /*---===HOMEPAGE===---*/
+	/*Bepaald de opmaak van de tekst titel*/
+	#titel
+	{
+		position: absolute;
+		top: 110px;
+		left: 440px;
+		color: #808080;
+	}
+	/*Bepaald de opmaak van de foto*/
+	#foto
+	{
+		position: absolute;
+		top: 150px;
+		left: 10px;
+		height: 596px;
+		border: 2px solid #000000;
+	}
+	/*Bepaald de opmaak van het tekst vak*/
+	#tekst
+	{
+		position: absolute;
+		top: 150px;
+		left: 440px;
+		right: 10px;
+		height: 596px;
+		border: 2px solid #000000;
+	}
+	/*---===ALGEMENE OPMAAK CV PAGINA'S===---*/
+	/*Bepaald de tabel opmaak*/
+	table
+	{
+		position: absolute;
+		font-size: 26px;
+		width: 300px;
+	}
+	/*zet een positie voor de plannen en ontwerpen lijst*/
+	#lijstPO
+	{
+		left: 2%;
+		top: 140px;
+	}
+	/*bepaald de opmaak en locatie van lijstREA*/
+	#lijstREA
+	{
+		top: 140px;
+		margin-left: 40%;
+		margin-right: 40%;
+	}
+	/*bepaald de opmaak en locatie van lijstTV*/
+	#lijstTV
+	{
+		top: 380px;
+		margin-left: 40%;
+		margin-right: 40%;
+	}
+	/*bepaald de opmaak en locatie van lijstCOM*/
+	#lijstCOM
+	{
+		top: 140px;
+		left: 77.5vw;
+	}
+	/*bepaald de opmaak en locatie van lijstBER*/
+	#lijstBER
+	{
+		top: 590px;
+		margin-left: 36.25%;
+		margin-right: 40%;
+	}
+	/*bepaald de opmaak en locatie van lijstBUR*/
+	#lijstBUR
+	{
+		top: 590px;
+		right: 2%;
+	}
+	/*bepaald de opmaak en locatie van lijstNL*/
+	#lijstNL
+	{
+		top: 380px;
+		left: 2%;
+	}
+	/*bepaald de opmaak en locatie van lijstEN*/
+	#lijstEN
+	{
+		top: 380px;
+		right: 2%;
+	}
+	/*bepaald de opmaak en locatie van lijstRE*/
+	#lijstRE
+	{
+		top: 590px;
+		left: 2%;
+	}
+	/*Regelt een tabel opmaak*/
+	table, tr, th, td
+	{
+		border: 2px solid black;
+		border-collapse: collapse;
+		text-align: center;
+	}
+	/*Regelt de opmaak van de titel boven de cijferlijst*/
+	#lijstTitel
+	{
+		position: absolute;
+		left: 2vw;
+		top: 100px;
+		color: #808080;
+	}
+    /*veranderd de opmaak van de knop wanneer je er overheen hovered*/
+	#knopGem:hover
+	{
+		background: #4355FF;
+		color: #f5f5f5;
+	}
+	/*bepaald de positie en opmaak van de knop*/
+	#knopGem
+	{
+		position: absolute;
+		left: 36vw;
+		top: 761px;
+		background: #6776FF;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 16px;
+		padding: 15px 32px;
+		border-radius: 12px;
+	}
+    /*bepaald de opmaak en locatie van de tekst*/
+	#gemTitel
+	{	
+		position: absolute;
+		color: #808080;
+		left: 2vw;
+		top: 770px;
+        width: 515px;
+	}
+    /*bepaald de opmaak en locatie van de uitslag*/
+    #gemiddelde
+    {
+		position: absolute;
+		color: #808080;
+		left: 2vw;
+		top: 840px;
+        width: 594px;
+    }
+	/*PERSOONLIJKE GEGEVENS*/
+	/*Bepaald de locatie van de titel*/
+	#persoonlijkeGegevens
+	{	
+		position: absolute;
+		left: 2vw;
+		top: 90px;
+		color: #808080;
+	}
+	/*bepaald de locatie van de persoonlijke gegevens*/
+	#persoonlijkeGegevens2
+	{
+		position: absolute;
+		left: 2vw;
+		top: 130px;
+		color: #000000;
+		font-size: 16px;
+	}
+	/*bepaald de locatie en opmaak van de google maps map*/
+	iframe
+	{
+		position: absolute;
+		top: 130px;;
+		right: 20px;
+		width: 1100px;
+		height: 595px;
+		border: 2px solid #000000
+	}
+	/*bepaald de locatie en opmaak van de tekst boven het google maps stuk*/
+	#woonplaatsMap
+	{
+		position: absolute;
+		top: 95px;
+		left: 410px;
+		color: #808080;
+	}
+	/*bepaald de opmaak en locatie van foto2*/
+	#foto2
+	{
+		position: absolute;
+		top: 300px;
+		left: 2vw;
+		height: 428px;
+		border: 2px solid #000000
+	}
+	/*---===WERK- EN STAGE- ERVARINGEN===---*/
+	/*bepaald de opmaak en locatie van werkErvaringen*/
+	#werkErvaringen
+	{
+		position: absolute;
+		left: 1vw;
+		top: 90px;
+		color: #808080;
+	}
+	/*bepaald de opmaak en locatie van stageErvaringen*/
+	#stageErvaringen
+	{
+		position: absolute;
+		left: 1vw;
+		top: 780px;
+		color: #808080;
+	}
+	/*maakt tekst in de klasse dik gedrukt.*/
+	.bold
+	{
+		font-weight: bold;
+	}
+	/*positioneerd de titel*/
+	#jumboTitel
+	{
+		position: absolute;
+		top: 165px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van Jumbo*/
+	#Jumbo
+	{
+		position: absolute;
+		top: 185px;
+		left: 1vw;
+		right: 40vw;
+	}
+	/*bepaald de opmaak en locatie van jumboAfbeelding*/
+	#jumboAfbeelding
+	{
+		position: absolute;
+		right: 5vw;
+		height: 10vw;
+		top: 130px;
+	}
+	/*bepaald de opmaak en locatie van vsaTitel*/
+	#vsaTitel
+	{
+		position: absolute;
+		top: 360px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van VSA*/
+	#VSA
+	{
+		position: absolute;
+		top: 380px;
+		left: 1vw;
+		right: 40vw;
+	}
+	/*bepaald de opmaak en locatie van vsaAfbeelding*/
+	#vsaAfbeelding
+	{
+		position: absolute;
+		right: 13.5vw;
+		height: 10vw;
+		top: 330px;
+	}
+	/*bepaald de opmaak en locatie van autoTitel*/
+	#autoTitel
+	{
+		position: absolute;
+		top: 580px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van auto*/
+	#auto
+	{
+		position: absolute;
+		top: 600px;
+		left: 1vw;
+		right: 40vw;
+	}
+	/*bepaald de opmaak en locatie van autoAfbeelding*/
+	#autoAfbeelding
+	{
+		position: absolute;
+		right: 0.8vw;
+		height: 10vw;
+		top: 530px;
+	}
+	/*bepaald de opmaak en locatie van steenuilTitel*/
+	#steenuilTitel
+	{
+		position: absolute;
+		top: 870px;
+		left: 1vw;
+	}
+	/*bepaald de opmaak en locatie van steenuil*/
+	#steenuil
+	{
+		position: absolute;
+		top: 890px;
+		left: 1vw;
+		right: 40vw;
+	}
+	/*bepaald de opmaak en locatie van steenuilAfbeelding*/
+	#steenuilAfbeelding
+	{
+		position: absolute;
+		right: 6vw;
+		height: 10vw;
+		top: 800px;
+	}
+	/*bepaald de opmaak en locatie van auto2Titel*/
+	#auto2Titel
+	{
+		position: absolute;
+		top: 1040px;
+		left: 1vw;
+	}/*bepaald de opmaak en locatie van auto2*/
+	#auto2
+	{
+		position: absolute;
+		top: 1060px;
+		left: 1vw;
+		right: 40vw;
+	}
+	/*bepaald de opmaak en locatie van auto2Afbeelding*/
+	#auto2Afbeelding
+	{
+		position: absolute;
+		right: 0.8vw;
+		height: 10vw;
+		top: 1000px;
+	}
+	/*---===OPLEIDINGEN===---*/
+	/*bepaald de positie van de pagina titel*/
+	#opleidingenTitel
+	{
+		position: absolute;
+		color: #808080;
+		left: 1vw;
+		top: 90px;
+	}
+	/*bepaald de positie van de kempenhorst titel*/
+	#kempenhorst
+	{
+		position: absolute;
+		left: 1vw;
+		top: 130px;
+	}
+	/*bepaald de opmaak en locatie van de tekst*/
+	#kempenhorstTekst
+	{
+		position: absolute;
+		left: 1vw;
+		right: 20vw;
+		top: 150px;
+	}
+	/*bepaald de opmaak en locatie van de kempenhorst afbeelding*/
+	#kempenhorstAfbeelding
+	{
+		position: absolute;
+		right: 2vw;
+		top: 90px;
+	}
+    /*bepaald de positie van de kw1c titel*/
+	#kw1c
+	{
+		position: absolute;
+		left: 1vw;
+		top: 290px;
+	}
+	/*bepaald de opmaak en locatie van de tekst*/
+	#kw1cTekst
+	{
+		position: absolute;
+		left: 1vw;
+		right: 20vw;
+		top: 310px;
+	}
+	/*bepaald de opmaak en locatie van de kw1c afbeelding*/
+	#kw1cAfbeelding
+	{
+		position: absolute;
+		right: 2vw;
+		top: 250px;
+        width: 225px;
+	}
+    /*bepaald de locatie en opmaak van de titel*/
+    #opdrachten
+    {
+        position: absolute;
+		left: 1%;
+		top: 450px;
+		color: #808080;
+    }
+    /*Bepaald de locatie en opmaak van de lijst*/
+    ul.bullet
+    {
+        list-style-type: circle;
+        position: absolute;
+		top: 490px;
+        left: 2vw;
+    }
+	/*bepaald de opmaak en locatie van diploma1*/
+	#diploma1
+	{
+		position: absolute;
+		width: 48%;
+		left: 1%;
+		top: 650px;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van diploma2*/
+	#diploma2
+	{
+		position: absolute;
+		width: 48%;
+		right: 1%;
+		top:   650px;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van anglia1*/
+	#anglia1
+	{
+		position: absolute;
+		width: 48%;
+		left: 1%;
+		top: 1705px;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van anglia2*/
+	#anglia2
+	{
+		position: absolute;
+		width: 48%;
+		right: 1%;
+		top: 1705px;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van wiskundeB*/
+	#wiskundeB
+	{
+		position: absolute;
+		width: 97.8%;
+		left: 1%;
+		top: 2760px;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van maatschappelijkestage*/
+	#maatschappelijkestage
+	{
+		position: absolute;
+		width: 97.8%;
+		left: 1%;
+		top: 3830px;
+		border: 2px solid #000000;
+	}
+	/*bepaald de opmaak en locatie van de diploma's tekst*/
+	#diplomas
+	{
+		position: absolute;
+		left: 1%;
+		top: 600px;
+		color: #808080;
+	}
+    /*bepaald de opmmaak en locatie het diploma plaatje*/
+    #stageDiploma
+    {
+        position: absolute;
+        top: 1230px;
+        left: 1%;
+        width: 98%;
+    }
+    /*bepaald de opmaak en locatie van de certificaat tekst*/
+    #diplomaTitel
+	{
+		position: absolute;
+		left: 1%;
+		top: 1190px;
+		color: #808080;
+	}
+	/*---===HOBBY'S===---*/
+	/*bepaald de opmaak en locatie van de hobby titel*/
+	#hobbyTitel
+	{
+		position: absolute;
+		color: #808080;
+		left: 2vw;
+		top: 90px;
+	}
+	/*bepaald de opmaak en locatie van de hapkido titel*/
+	#hapkido
+	{
+		position: absolute;
+		left: 2vw;
+		top: 140px;
+	}
+	/*bepaald de opmaak en locatie van hapkido tekst*/
+	#hapkidoTekst
+	{
+		position: absolute;
+		left: 2vw;
+		right: 40vw;
+		top: 160px;
+	}
+	/*bepaald de opmaak en locatie van hapkido afbeelding*/
+	#hapkidoAfbeelding
+	{
+		position: absolute;
+		right: 13vw;
+		height: 13vw;
+		top: 100px;
+	}
+	/*bepaald de opmaak en locatie van grasparkiet titel*/
+	#grasparkiet
+	{
+		position: absolute;
+		left: 2vw;
+		top: 450px;
+	}
+	/*bepaald de opmaak en locatie van de grasparkiet tekst*/
+	#grasparkietTekst
+	{
+		position: absolute;
+		left: 2vw;
+		right: 40vw;
+		top: 470px;
+	}
+	/*bepaald de opmaak en locatie van de grasparkiet afbeelding*/
+	#grasparkietAfbeelding
+	{
+		position: absolute;
+		top: 360px;
+		right: 8vw;
+		height: 13vw;
+	}
+	/*bepaald de opmaak en locatie van de videogames titel*/
+	#videogames
+	{
+		position: absolute;
+		left: 2vw;
+		top: 680px;
+	}
+	/*bepaald de opmaak en locatie van de videogames tekst*/
+	#videogamesTekst
+	{
+		position: absolute;
+		left: 2vw;
+		right: 40vw;
+		top: 700px;
+	}
+	/*bepaald de opmaak en locatie van de videogames video*/
+	#videogamesVideo
+	{
+		position: absolute;
+		right: 2vw;
+		width: 485px;
+		height: 275px;
+		top: 580px;
+	}
+    /*---===CV NEDERLANDS===---*/
+    /*bepaald de locatie en opmaak van de titel*/
+    #cvNederlandsTitel
+    {
+        position: absolute;
+		left: 1vw;
+		top: 90px;
+		color: #808080;
+    }
+    /*bepaald de locatie en opmaak van de afbeelding*/
+    #cvNederlandsAfbeelding
+    {
+        position: absolute;
+		top: 130px;
+        left: 1vw;
+        width: 50vw;
+    }
+}
