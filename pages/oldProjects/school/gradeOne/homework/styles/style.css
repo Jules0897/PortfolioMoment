@@ -1,0 +1,101 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body > header > h1
+{
+    background-color: #F0F8FF;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0;
+}
+
+#wrapper > div
+{
+    background-color: #F5F5DC;
+    width: 200px;
+}
+
+a > li
+{
+    list-style-type: circle;
+    position: relative;
+    left: 30px;
+}
+
+#opdracht > div
+{
+    position: relative;
+    top: -420px;
+    left: 220px;
+    width: 82.5%;
+}
+
+#footer > div
+{
+    position: fixed;
+    bottom: 0px;
+    background-color: #5F9EA0;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#groen
+{
+    background-color: green;
+}
+
+#rood
+{
+    background-color: red;
+}
+
+.vragen51
+{
+    position: absolute;
+    left: 15vw;
+    width: 17vw;
+}
+
+.vragen511
+{
+    position: absolute;
+    left: 15vw;
+}
+
+.vragen512
+{
+    position: absolute;
+    left: 17vw;
+}
+
+.vragen513
+{
+    position: absolute;
+    width: 32vw;
+}
+
+#resultaten
+{
+    position: absolute;
+    top: 4vw;
+    right: 47vw;
+}
+
+/*6.3*/
+.keuzeVak
+{
+    background-color: #EFEFED;
+    width: 100%;
+    left: 10%;
+}
+
+.RPCIMG
+{
+    height: 20px;
+}
