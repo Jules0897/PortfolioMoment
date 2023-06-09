@@ -19,9 +19,9 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 require("phaser");
-var findPath_1 = require("../src/findPath");
-var linkAnims_1 = require("../src/linkAnims");
-Promise.resolve().then(function () { return require('../src/link'); });
+var findPath_1 = require("./findPath");
+var linkAnims_1 = require("./linkAnims");
+Promise.resolve().then(function () { return require('./link'); });
 var Game = /** @class */ (function (_super) {
     __extends(Game, _super);
     function Game() {
@@ -97,7 +97,7 @@ var Game = /** @class */ (function (_super) {
             // generate the path
             var path = (0, findPath_1.default)(startVec, targetVec, overworldLayer, removableLayer);
             // give it to the player to use
-            // this.link.moveAlong(path)
+            _this.link.moveAlong(path);
         });
         // remember to clean up on Scene shutdown
         this.events.on(Phaser.Scenes.Events.SHUTDOWN, function () {
